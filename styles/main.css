@@ -1,0 +1,157 @@
+.main-bg {
+  position: absolute;
+  height: 81vh;
+  width: 100%;
+  background: linear-gradient(260.84deg, #4043ff 5.86%, #192cd1 101.33%);
+  transition: 3s ease;
+  z-index: -1;
+}
+.main-bg:hover {
+  background: linear-gradient(231.06deg, #4043ff -5.53%, #192cd1 113.15%);
+}
+.main-bg .cover {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.main-bg .cover img {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+}
+main {
+  z-index: 2;
+  height: 75.37vh;
+  display: flex;
+  justify-content: center;
+}
+main > div {
+  flex: 1;
+}
+main .text {
+  flex: 1;
+  transform: translateY(50px);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+main .text h1 {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  margin-top: 16.11vh;
+}
+main .text h1 .lg {
+  font-size: 4.63vh;
+}
+main .text h1 .sm {
+  font-size: 4.17vh;
+}
+main .text p {
+  color: white;
+  font-size: 1rem;
+  max-width: 25.26vw;
+}
+main .text a {
+  height: 5.56vh;
+  width: 8.85vw;
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 4.6vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3vw;
+}
+main .text a svg {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+main .text a:hover {
+  color: #192CD1;
+  background-color: white;
+}
+main .text a:hover svg {
+  transform: translateX(0px);
+}
+main .text a:hover svg .head {
+  fill: #192CD1;
+}
+main .text a:hover svg .tail {
+  fill: #192CD1;
+  opacity: 1;
+}
+main .text.animate {
+  opacity: 1;
+  transform: translateY(0px);
+}
+main .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .image img {
+  max-width: 41.3vw;
+  height: auto;
+  margin: auto;
+  position: absolute;
+}
+main .image img.frame {
+  z-index: -1;
+}
+main .image img.phones {
+  z-index: 1;
+  max-height: 71.1vh;
+  transform: translateY(50px);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+main .image img.phones.animate {
+  opacity: 1;
+  transform: translateY(0px);
+}
+main .image img.popup {
+  z-index: 2;
+  top: 13.61vh;
+  left: -0.7vw;
+  margin: 0px;
+  padding: 0px;
+  max-width: 5.3vw;
+  transform: scale(0.3, 0.1) translateY(50px);
+  opacity: 0;
+  margin-top: 5vh;
+  transition: 0.3s ease;
+}
+main .image img.popup.animate {
+  margin-top: 0vh;
+  transform: translateY(0px) scale(1, 1);
+  opacity: 1;
+}
+main .image img.transfer-popup {
+  z-index: 2;
+  width: 9.1vw;
+  top: 33.52vh;
+  right: -1.5vw;
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+main .image img.transfer-popup.animate {
+  opacity: 1;
+  transform: translateX(-15px);
+}
+@media screen and (min-width: 1081px)  {
+  main {
+    padding-left: 16.2vw;
+    padding-right: 16.2vw;
+  }
+}

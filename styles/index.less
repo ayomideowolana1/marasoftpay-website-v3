@@ -1,0 +1,36 @@
+@import "fonts";
+@import "colors";
+@import "mq";
+@import "main";
+@import "nav";
+@import "features";
+@import "features";
+@import "fonts";
+@import "footer";
+
+body {
+  position: relative;
+  margin: 0px;
+  .main-font();
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  background: linear-gradient(260.84deg, #4043ff 5.86%, #192cd1 101.33%);
+}
+
+svg {
+  transition: 0.2s ease;
+  &.arrow {
+    width: 1.14vw;
+    height: 1.18vh;
+    margin-top: 0.6vw;
+    margin-bottom: auto;
+    transform: translateX(-8px);
+
+    .tail {
+      opacity: 0;
+    }
+  }
+}

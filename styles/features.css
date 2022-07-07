@@ -1,0 +1,283 @@
+@import '/assets/fonts/GTWalsheimPro/stylesheet.css';
+h1 {
+  font-family: 'GT Walsheim Pro';
+  font-size: 7vh;
+  font-weight: 100;
+}
+.features .header h4 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.3vw;
+  color: #192CD1;
+  margin-top: 2.04vh;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.features .header h1 {
+  font-size: 3.7vh;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2.78vh;
+  margin-bottom: 8.89vh;
+  line-height: 1.1;
+}
+.features.dark {
+  background-color: #F4F6F8;
+  margin-top: 16.2vh;
+  border-radius: 10.42vw 10.42vw 0px 0px;
+}
+#section1 {
+  padding-left: 14.43vw;
+  padding-right: 14.43vw;
+}
+#section1 .carousel {
+  height: 60.52vh;
+  width: 69.95vw;
+}
+#section1 .carousel .carousel-control-next {
+  width: auto;
+}
+#section1 .carousel .carousel-control-next svg {
+  height: 5.22vh;
+  width: 5.22vh;
+}
+#section1 .carousel .carousel-control-next svg #tail {
+  display: none;
+}
+#section1 .carousel .carousel-control-prev {
+  width: auto;
+}
+#section1 .carousel .carousel-control-prev svg {
+  height: 5.22vh;
+  width: 5.22vh;
+  transform: rotate(180deg);
+}
+#section1 .carousel .carousel-control-prev svg #tail {
+  display: none;
+}
+#section1 .carousel .carousel-inner {
+  height: 62.2vh;
+}
+#section1 .carousel .carousel-inner .carousel-item.active .image {
+  overflow: visible;
+}
+#section1 .carousel .carousel-inner .image {
+  transition: 0.03s ease-in-out;
+  transform: scale(0.8, 0.8);
+  height: 57.86vh;
+  width: 60.52vw;
+  margin: auto;
+}
+#section1 .carousel .carousel-inner .image .content {
+  border-radius: 6.21vh;
+  margin: auto;
+  background-color: #f6f0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#section1 .carousel .carousel-inner .image .content .text {
+  margin: auto;
+}
+#section1 .carousel .carousel-inner .image .content .text p {
+  width: 25.16vw;
+  line-height: 1.5;
+  text-align: center;
+}
+#section1 .carousel .carousel-inner .image .content img {
+  border-radius: 6.21vh;
+  height: 57.86vh;
+  width: 30.47vw;
+  margin-right: auto;
+  background-color: #192CD1;
+}
+#section2 .header h4 {
+  margin-top: 11.24vh;
+}
+#section2 .header h1 {
+  margin-bottom: 4.72vh;
+}
+#section2 .images {
+  height: 63.06vh;
+  width: 68.18vw;
+  margin: auto;
+  position: relative;
+}
+#section2 .images img.desktop {
+  position: absolute;
+  width: 40.63vw;
+  border: 1px solid #f2f2f286;
+  border-radius: 30px;
+  box-shadow: 0px 20px 60px rgba(64, 67, 255, 0.1);
+}
+#section2 .images img.desktop.back {
+  top: 2.4vh;
+  right: 2.63vw;
+}
+#section2 .images img.desktop.front {
+  top: 12.22vh;
+  left: 1.76vw;
+}
+#section3 {
+  border: 1px solid red;
+}
+#section3 .header h4 {
+  margin-top: 8.84vh;
+}
+#section3 .header h1 {
+  margin-bottom: 6.48vh;
+}
+#section3 .container {
+  height: 74.62vh;
+  width: 60.99vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+#section3 .container div {
+  width: 19.27vw;
+  height: 35.74vh;
+  margin: auto;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  background: #f4f6f8;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.3vh;
+}
+#section3 .container div img {
+  width: 6.48vh;
+  height: 6.48vh;
+}
+#section3 .container div h3 {
+  font-size: 2.31vh;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+}
+#section3 .container div p {
+  margin: auto;
+  font-size: 1.67vh;
+  max-width: 14.79vw;
+  color: #576078;
+  text-align: center;
+  margin: 0px;
+}
+#section3 .container div a {
+  background-color: #192cd1;
+  color: white;
+  font-size: 1.39vh;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  width: 6.2vw;
+  height: 3.7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+#section3 .container div:hover {
+  background: linear-gradient(222.21deg, #4043ff 1.32%, #0404a5 98.71%);
+  filter: drop-shadow(0px 20px 50px rgba(64, 67, 255, 0.455));
+  transform: translateY(-10px);
+}
+#section3 .container div:hover h3,
+#section3 .container div:hover p {
+  color: white;
+}
+#section3 .container div:hover a {
+  background-color: white;
+  color: #000;
+}
+#section4 {
+  padding-top: 6.48vh;
+}
+#section4 .header h1 {
+  margin-bottom: 0px;
+}
+#section4 .images {
+  margin-bottom: 8.61vh;
+  margin-top: 3.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.66vw;
+}
+#section4 .images img {
+  max-width: 11.09vw;
+  height: auto;
+}
+#cta {
+  height: 38.8vh;
+  width: 66.15vw;
+  margin: auto;
+  border: 1px solid;
+  margin-bottom: 15.56vh;
+  padding: 4.63vh;
+}
+#cta .cont {
+  display: flex;
+  background: linear-gradient(225deg, rgba(64, 67, 255, 0.333) 0%, #192cd1 100%), linear-gradient(229.91deg, #4043ff 21.58%, #192cd1 89.53%);
+  height: 100%;
+  padding-left: 3.15vw;
+  border-radius: 3.24vh;
+}
+#cta .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#cta .text h1 {
+  font-size: 3.24vh;
+  color: white;
+  font-weight: bold;
+}
+#cta .text p {
+  font-size: 1.85vh;
+  color: white;
+  max-width: 17.6vw;
+}
+#cta .buttons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.56vw;
+}
+#cta .buttons a {
+  width: 8.85vw;
+  height: 5.56vh;
+  display: inline-block;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'GT Walsheim Pro Ultra';
+  border-radius: 4.63vh;
+  font-weight: 600;
+}
+#cta .buttons a.getstarted {
+  border: 2px solid transparent;
+  background-color: white;
+  color: #192CD1;
+}
+#cta .buttons a.learnmore {
+  border: 2px solid white;
+  color: white;
+}
+#reviews .header h1 {
+  margin-bottom: 10.19vh;
+}
+#reviews .images {
+  height: 41.3vh;
+}
