@@ -119,9 +119,6 @@ h1 {
   top: 12.22vh;
   left: 1.76vw;
 }
-#section3 {
-  border: 1px solid red;
-}
 #section3 .header h4 {
   margin-top: 8.84vh;
 }
@@ -274,10 +271,4 @@ h1 {
 #cta .buttons a.learnmore {
   border: 2px solid white;
   color: white;
-}
-#reviews .header h1 {
-  margin-bottom: 10.19vh;
-}
-#reviews .images {
-  height: 41.3vh;
 }

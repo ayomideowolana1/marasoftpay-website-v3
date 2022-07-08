@@ -1,0 +1,65 @@
+#reviews {
+  padding-bottom: 10.19vh;
+}
+#reviews .header h1 {
+  margin-bottom: 10.19vh;
+}
+#reviews .images .carousel {
+  height: 51.3vh;
+}
+#reviews .images .carousel .carousel-inner {
+  display: flex;
+}
+#reviews .images .carousel .carousel-item {
+  width: 66.15vw;
+  margin: auto;
+}
+#reviews .images .carousel .carousel-item .cont {
+  height: 41.3vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#reviews .images .carousel .carousel-item .cont > div {
+  height: 34.3vh;
+  width: 19.27vw;
+  border-radius: 1.39vh;
+  padding: 1.56vw;
+  background: linear-gradient(180deg, #192CD1 0%, #0404A5 100%), #576078;
+  color: white;
+  transition: 0.3s ease;
+}
+#reviews .images .carousel .carousel-item .cont > div:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(180deg, #192CD1 0%, #0404A5 100%);
+}
+#reviews .images .carousel .carousel-item .cont > div > img {
+  width: 2.22vh;
+  height: 2.22vh;
+  margin-bottom: 2vh;
+}
+#reviews .images .carousel .carousel-item .cont > div > p {
+  font-size: 14px;
+  width: 15.99vw;
+  margin: auto;
+  font-style: italic;
+  margin-bottom: 2vh;
+}
+#reviews .images .carousel .carousel-item .cont > div .user {
+  display: flex;
+  align-items: center;
+  gap: 1.56vw;
+}
+#reviews .images .carousel .carousel-item .cont > div .user img {
+  border: 1px solid transparent;
+  width: 11.11vh;
+  height: 11.11vh;
+  background-color: white;
+  border-radius: 50%;
+}
+#reviews .images .carousel .carousel-item .cont > div .user p {
+  font-size: 14px;
+}
+#reviews .images .carousel .carousel-item .cont > div .user p span {
+  display: block;
+}
