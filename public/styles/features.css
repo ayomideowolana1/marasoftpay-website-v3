@@ -21,6 +21,13 @@ h1 {
   margin-bottom: 8.89vh;
   line-height: 1.1;
 }
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .features .header h1 {
+    font-size: 1.83vh;
+    margin-top: 2vh;
+    margin-bottom: 4.2vh;
+  }
+}
 .features.dark {
   background-color: #F4F6F8;
   margin-top: 16.2vh;
@@ -29,6 +36,9 @@ h1 {
 #section1 {
   padding-left: 14.43vw;
   padding-right: 14.43vw;
+}
+#section1 .header h1 {
+  margin-bottom: 0px;
 }
 #section1 .carousel {
   height: 60.52vh;
@@ -92,6 +102,29 @@ h1 {
   margin-right: auto;
   background-color: #192CD1;
 }
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #section1 {
+    padding-left: 9.86vw;
+    padding-right: 9.86vw;
+  }
+  #section1 .carousel {
+    width: 100%;
+    height: 40vh;
+  }
+  #section1 .carousel .carousel-inner {
+    height: 40vh;
+  }
+  #section1 .carousel .carousel-inner .image {
+    width: 71.88vw;
+    height: 29.7vh;
+  }
+  #section1 .carousel .carousel-inner .image .content {
+    margin-top: 4vh;
+  }
+  #section1 .carousel .carousel-inner .image .content img {
+    height: 29.7vh;
+  }
+}
 #section2 .header h4 {
   margin-top: 11.24vh;
 }
@@ -118,6 +151,18 @@ h1 {
 #section2 .images img.desktop.front {
   top: 12.22vh;
   left: 1.76vw;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #section2 .header h4 {
+    margin-top: 6.85vh;
+  }
+  #section2 .images {
+    width: 76.17vw;
+    height: 35vh;
+  }
+  #section2 .images img.desktop {
+    border-radius: 10px;
+  }
 }
 #section3 .header h4 {
   margin-top: 8.84vh;
@@ -191,6 +236,40 @@ h1 {
 #section3 .container div:hover a {
   background-color: white;
   color: #000;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #section3 .header h4 {
+    margin-top: 6.85vh;
+  }
+  #section3 .container {
+    max-width: 82vw;
+    width: 100%;
+    height: 41vh;
+    gap: 0px;
+  }
+  #section3 .container > div {
+    width: 24.59vw;
+    height: 21.11vh;
+    gap: 1.17vh;
+    margin-bottom: 1vh;
+  }
+  #section3 .container > div img {
+    width: 3.44vh;
+    height: 3.44vh;
+  }
+  #section3 .container > div h3 {
+    font-size: 1.32vh;
+  }
+  #section3 .container > div p {
+    font-size: 1.1vh;
+    max-width: 18vw;
+  }
+  #section3 .container > div a {
+    width: 8.81vw;
+    height: 3.2vh;
+    font-size: 1vh;
+    border-radius: 5px;
+  }
 }
 #section4 {
   padding-top: 6.48vh;
@@ -271,4 +350,44 @@ h1 {
 #cta .buttons a.learnmore {
   border: 2px solid white;
   color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #cta {
+    border: none;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+    height: auto;
+    margin-bottom: 7vh;
+  }
+  #cta .cont {
+    border-radius: 0px;
+    flex-direction: column;
+    height: 20.2vh;
+    padding-left: 0px;
+  }
+  #cta .text {
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    margin-bottom: -15px;
+  }
+  #cta .text h1 {
+    font-size: 1.83vh;
+  }
+  #cta .text p {
+    font-size: 1.1vh;
+    max-width: 25vw;
+    text-align: center;
+  }
+  #cta .buttons {
+    align-items: flex-start;
+    margin-top: -10px;
+  }
+  #cta .buttons a {
+    width: 12.94vw;
+    height: 3.86vh;
+    font-family: sans-serif;
+    font-size: 0.8vh;
+  }
 }

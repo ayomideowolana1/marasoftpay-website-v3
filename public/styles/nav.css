@@ -1,5 +1,5 @@
 nav {
-  z-index: 2;
+  z-index: 3;
   height: 9.44vh;
   display: flex;
 }
@@ -11,12 +11,28 @@ nav section {
 nav section.logo img {
   max-width: 8.91vw;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  nav section.logo img {
+    max-width: 38.91vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  nav section.logo img {
+    max-width: 20.91vw;
+  }
+}
 nav section.links {
   justify-content: center;
   gap: 2.34vw;
   flex: 2;
 }
+@media screen and (min-width: 320px) and (max-width: 1080px) and (orientation: portrait)  {
+  nav section.links {
+    display: none;
+  }
+}
 nav section.links a {
+  position: relative;
   color: white;
   font-size: 14px;
   text-decoration: none;
@@ -27,46 +43,62 @@ nav section.links a {
   align-items: center;
   justify-content: center;
   border-radius: 4.6vh;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  transition: 0.3s ease;
+  padding-left: 1.88vw;
+  padding-right: 1.88vw;
+  transition: 0.3s ease-in-out;
+}
+nav section.links a svg {
+  display: inline;
+  transition: 0.2s ease-in-out;
+}
+nav section.links a svg .head {
+  opacity: 0;
 }
 nav section.links a:hover {
   border: 2px solid white;
 }
 nav section.links a:hover svg {
-  transform: translateX(-2px);
+  display: inline;
 }
-nav section.links a:hover svg .tail {
+nav section.links a:hover svg .head {
   opacity: 1;
 }
 nav section.cta {
   justify-content: flex-end;
   gap: 2.55vw;
 }
+@media screen and (min-width: 320px) and (max-width: 1080px) and (orientation: portrait)  {
+  nav section.cta {
+    display: none;
+  }
+}
 nav section.cta a {
+  position: relative;
   color: white;
   text-decoration: none;
   font-size: 14px;
-  min-width: 6.09vw;
   height: 3.7vh;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
-  gap: 0.3vw;
-  transition: 0.3s ease;
   border-radius: 4.6vh;
+  padding-left: 1.88vw;
+  padding-right: 1.88vw;
+  gap: 0.5vw;
+  transition: 0.3s ease-in-out;
+}
+nav section.cta a span {
+  display: inline-block;
+}
+nav section.cta a svg {
+  transition: 0.2s ease-in-out;
+  opacity: 0;
 }
 nav section.cta a:hover {
   border: 2px solid white;
 }
 nav section.cta a:hover svg {
-  transform: translateX(0px);
-}
-nav section.cta a:hover svg .tail {
   opacity: 1;
 }
 nav section.cta a.login {
@@ -95,5 +127,13 @@ nav section.cta .login:hover svg .head {
   nav {
     padding-left: 16.2vw;
     padding-right: 16.2vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  nav {
+    height: 5.63vh;
+    margin-bottom: 1.46vh;
+    padding-left: 9.86vw;
+    padding-right: 9.86vw;
   }
 }

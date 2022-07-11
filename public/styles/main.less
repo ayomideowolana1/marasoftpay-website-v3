@@ -24,6 +24,12 @@
       width: 100%;
     }
   }
+  @media @tab_portrait {
+   height: 42.68vh;
+   .cover{
+     height: 101%;
+   }
+  }
 }
 
 main {
@@ -69,21 +75,20 @@ main {
       justify-content: center;
       align-items: center;
       gap: 0.3vw;
-      span{
+      span {
         // border: 1px solid white;
       }
-      svg{
+      svg {
         // border: 1px solid white;
         margin-top: auto;
         margin-bottom: auto;
-
       }
       &:hover {
         color: @persian_blue;
         background-color: white;
         svg {
           transform: translateX(0px);
-          .head{
+          .head {
             fill: @persian_blue;
           }
           .tail {
@@ -91,6 +96,30 @@ main {
             opacity: 1;
           }
         }
+      }
+    }
+    @media @tab_portrait {
+      
+      h1 {
+        margin-top: 7vh;
+        .lg {
+          font-size: 35px;
+        }
+        .sm {
+          font-size: 30px;
+        }
+      }
+      p{
+        font-size: 15px;
+        max-width: 30vw;
+        margin-top: 15px;
+      }
+      a{
+        width: 13vw;
+        height: 3vh;
+        font-size: 14px;
+        margin-top: 25px;
+        
       }
     }
     transform: translateY(50px);
@@ -102,7 +131,6 @@ main {
     }
   }
   .image {
-    // border: 1px solid red;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -114,7 +142,6 @@ main {
       height: auto;
       margin: auto;
       position: absolute;
-
       &.frame {
         z-index: -1;
       }
@@ -162,10 +189,28 @@ main {
           transform: translateX(-15px);
         }
       }
+
+      @media @tab_portrait {
+        &.popup{
+          left: -2vw;
+        }
+        &.transfer-popup{
+          top: 19vh;
+        }
+        img{
+          max-width: 30.36vw;
+          border: 1px solid;
+        }
+      }
     }
   }
   @media @desktop_or_larger {
     padding-left: 16.2vw;
     padding-right: 16.2vw;
+  }
+  @media @tab_portrait {
+    height: 40vh;
+    padding-left: 9.86vw;
+    padding-right: 9.86vw;
   }
 }

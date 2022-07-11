@@ -1,0 +1,25 @@
+{
+  "name": "website_v3_ejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayomideowolana1/marasoftpay-website-v3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayomideowolana1/marasoftpay-website-v3/issues"
+  },
+  "homepage": "https://github.com/ayomideowolana1/marasoftpay-website-v3#readme",
+  "dependencies": {
+    "ay-logger": "^1.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

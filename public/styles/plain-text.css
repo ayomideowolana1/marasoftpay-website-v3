@@ -1,0 +1,40 @@
+@import '/assets/fonts/GTWalsheimPro/stylesheet.css';
+h1 {
+  font-family: 'GT Walsheim Pro';
+  font-size: 7vh;
+  font-weight: 100;
+}
+body {
+  display: flex;
+  padding-top: 5vh;
+  scroll-behavior: smooth;
+  font-family: 'GT Walsheim Pro';
+}
+body > div {
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+body > div.nav {
+  width: 20vw;
+}
+body > div.content {
+  padding: 20px;
+  max-width: 60vw;
+}
+p {
+  line-height: 1.5;
+}
+ul.nav {
+  list-style: none;
+}
+li {
+  padding: 10px;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+span.bold {
+  font-weight: 500;
+}

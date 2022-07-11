@@ -1,3 +1,5 @@
+
+
 const loadAnimations = () => {
   let phones = document.querySelector(".phones");
   let popup = document.querySelector(".popup");
@@ -14,3 +16,5 @@ const loadAnimations = () => {
     tfpopup.classList.add("animate");
   },1000);
 };
+
+

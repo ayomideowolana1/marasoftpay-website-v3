@@ -22,6 +22,14 @@
   bottom: -1px;
   width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .main-bg {
+    height: 42.68vh;
+  }
+  .main-bg .cover {
+    height: 101%;
+  }
+}
 main {
   z-index: 2;
   height: 75.37vh;
@@ -88,6 +96,28 @@ main .text a:hover svg .tail {
   fill: #192CD1;
   opacity: 1;
 }
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  main .text h1 {
+    margin-top: 7vh;
+  }
+  main .text h1 .lg {
+    font-size: 35px;
+  }
+  main .text h1 .sm {
+    font-size: 30px;
+  }
+  main .text p {
+    font-size: 15px;
+    max-width: 30vw;
+    margin-top: 15px;
+  }
+  main .text a {
+    width: 13vw;
+    height: 3vh;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+}
 main .text.animate {
   opacity: 1;
   transform: translateY(0px);
@@ -149,9 +179,28 @@ main .image img.transfer-popup.animate {
   opacity: 1;
   transform: translateX(-15px);
 }
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  main .image img.popup {
+    left: -2vw;
+  }
+  main .image img.transfer-popup {
+    top: 19vh;
+  }
+  main .image img img {
+    max-width: 30.36vw;
+    border: 1px solid;
+  }
+}
 @media screen and (min-width: 1081px)  {
   main {
     padding-left: 16.2vw;
     padding-right: 16.2vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  main {
+    height: 40vh;
+    padding-left: 9.86vw;
+    padding-right: 9.86vw;
   }
 }

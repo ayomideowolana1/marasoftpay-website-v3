@@ -1,0 +1,11 @@
+<div>
+  <a class="back">back</a>
+  <script>
+    let buttons = document.querySelectorAll(".back");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        history.back();
+      });
+    });
+  </script>
+</div>
