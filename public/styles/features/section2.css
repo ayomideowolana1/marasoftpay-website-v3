@@ -1,0 +1,45 @@
+@import '/assets/fonts/GTWalsheimPro/stylesheet.css';
+h1 {
+  font-family: 'GT Walsheim Pro';
+  font-size: 7vh;
+  font-weight: 100;
+}
+#section2 .header h4 {
+  margin-top: 11.24vh;
+}
+#section2 .header h1 {
+  margin-bottom: 4.72vh;
+}
+#section2 .images {
+  height: 63.06vh;
+  width: 68.18vw;
+  margin: auto;
+  position: relative;
+}
+#section2 .images img.desktop {
+  position: absolute;
+  width: 40.63vw;
+  border: 1px solid #f2f2f286;
+  border-radius: 30px;
+  box-shadow: 0px 20px 60px rgba(64, 67, 255, 0.1);
+}
+#section2 .images img.desktop.back {
+  top: 2.4vh;
+  right: 2.63vw;
+}
+#section2 .images img.desktop.front {
+  top: 12.22vh;
+  left: 1.76vw;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #section2 .header h4 {
+    margin-top: 6.85vh;
+  }
+  #section2 .images {
+    width: 76.17vw;
+    height: 35vh;
+  }
+  #section2 .images img.desktop {
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../mq";
+@import "../colors";
+@import "../fonts";
+
+#section2 {
+  .header {
+    h4 {
+      margin-top: 11.24vh;
+    }
+    h1 {
+      margin-bottom: 4.72vh;
+    }
+  }
+  .images {
+    // background-color: #f2f2f2;
+    height: 63.06vh;
+    width: 68.18vw;
+    margin: auto;
+    position: relative;
+    img {
+      &.desktop {
+        position: absolute;
+        width: 40.63vw;
+        border: 1px solid #f2f2f286;
+        border-radius: 30px;
+        box-shadow: 0px 20px 60px rgba(64, 67, 255, 0.1);
+        &.back {
+          top: 2.4vh;
+          right: 2.63vw;
+        }
+        &.front {
+          // width: 40.78vw;
+          top: 12.22vh;
+          left: 1.76vw;
+        }
+      }
+    }
+  }
+  @media @tab_portrait {
+    .header {
+      h4 {
+        margin-top: 6.85vh;
+      }
+    }
+    .images {
+      width: 76.17vw;
+      height: 35vh;
+      img {
+        &.desktop {
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

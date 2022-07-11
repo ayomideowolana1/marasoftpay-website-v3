@@ -83,22 +83,32 @@ main .text a {
   justify-content: center;
   align-items: center;
   gap: 0.3vw;
+  transition: 0.3s ease;
+}
+main .text a span {
+  transform: translateX(0.8vw);
+  transition: inherit;
 }
 main .text a svg {
   margin-top: auto;
   margin-bottom: auto;
+  transform: translateX(-0.5vw);
+  transition: inherit;
+}
+main .text a svg .head {
+  opacity: 0;
 }
 main .text a:hover {
   color: #192CD1;
   background-color: white;
 }
+main .text a:hover span {
+  transform: translateX(0.3vw);
+}
 main .text a:hover svg {
   transform: translateX(0px);
 }
 main .text a:hover svg .head {
-  fill: #192CD1;
-}
-main .text a:hover svg .tail {
   fill: #192CD1;
   opacity: 1;
 }
@@ -235,7 +245,7 @@ nav section.logo img {
 }
 nav section.links {
   justify-content: center;
-  gap: 2.34vw;
+  gap: 1.2vw;
   flex: 2;
 }
 @media screen and (min-width: 320px) and (max-width: 1080px) and (orientation: portrait)  {
@@ -255,12 +265,18 @@ nav section.links a {
   align-items: center;
   justify-content: center;
   border-radius: 4.6vh;
-  padding-left: 1.88vw;
-  padding-right: 1.88vw;
+  padding-left: 1.26vw;
+  padding-right: 1.26vw;
   transition: 0.3s ease-in-out;
+}
+nav section.links a span {
+  display: inline-block;
+  transform: translateX(0.8vw);
+  transition: 0.3s ease;
 }
 nav section.links a svg {
   display: inline;
+  transform: translateX(-0.5vw);
   transition: 0.2s ease-in-out;
 }
 nav section.links a svg .head {
@@ -269,7 +285,11 @@ nav section.links a svg .head {
 nav section.links a:hover {
   border: 2px solid white;
 }
+nav section.links a:hover span {
+  transform: translateX(0.3vw);
+}
 nav section.links a:hover svg {
+  transform: translateX(0vw);
   display: inline;
 }
 nav section.links a:hover svg .head {
@@ -295,22 +315,33 @@ nav section.cta a {
   justify-content: center;
   align-items: center;
   border-radius: 4.6vh;
-  padding-left: 1.88vw;
-  padding-right: 1.88vw;
+  padding-left: 1.26vw;
+  padding-right: 1.26vw;
   gap: 0.5vw;
   transition: 0.3s ease-in-out;
 }
 nav section.cta a span {
   display: inline-block;
+  transform: translateX(0.8vw);
+  transition: 0.3s ease;
 }
 nav section.cta a svg {
   transition: 0.2s ease-in-out;
+  transform: translateX(-0.5vw);
+}
+nav section.cta a svg .head {
   opacity: 0;
 }
 nav section.cta a:hover {
   border: 2px solid white;
 }
+nav section.cta a:hover span {
+  transform: translateX(0.3vw);
+}
 nav section.cta a:hover svg {
+  transform: translateX(0vw);
+}
+nav section.cta a:hover svg .head {
   opacity: 1;
 }
 nav section.cta a.login {
@@ -348,35 +379,6 @@ nav section.cta .login:hover svg .head {
     padding-left: 9.86vw;
     padding-right: 9.86vw;
   }
-}
-.features .header h4 {
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.3vw;
-  color: #192CD1;
-  margin-top: 2.04vh;
-  margin-bottom: 0px;
-  text-align: center;
-}
-.features .header h1 {
-  font-size: 3.7vh;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 2.78vh;
-  margin-bottom: 8.89vh;
-  line-height: 1.1;
-}
-@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
-  .features .header h1 {
-    font-size: 1.83vh;
-    margin-top: 2vh;
-    margin-bottom: 4.2vh;
-  }
-}
-.features.dark {
-  background-color: #F4F6F8;
-  margin-top: 16.2vh;
-  border-radius: 10.42vw 10.42vw 0px 0px;
 }
 #section1 {
   padding-left: 14.43vw;
@@ -419,7 +421,7 @@ nav section.cta .login:hover svg .head {
 #section1 .carousel .carousel-inner .image {
   transition: 0.03s ease-in-out;
   transform: scale(0.8, 0.8);
-  height: 57.86vh;
+  height: 57.31vh;
   width: 60.52vw;
   margin: auto;
 }
@@ -440,12 +442,33 @@ nav section.cta .login:hover svg .head {
   line-height: 1.5;
   text-align: center;
 }
-#section1 .carousel .carousel-inner .image .content img {
-  border-radius: 6.21vh;
-  height: 57.86vh;
-  width: 30.47vw;
+#section1 .carousel .carousel-inner .image .content .text p a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 1vh;
+}
+#section1 .carousel .carousel-inner .image .content .text p a:hover {
+  cursor: pointer;
+}
+#section1 .carousel .carousel-inner .image .content .img-cont {
+  border-radius: 6.51vh;
+  height: 57.31vh;
+  width: 54.17vh;
   margin-right: auto;
-  background-color: #192CD1;
+  background: linear-gradient(225deg, #4043ff 0%, #192cd1 100%);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+#section1 .carousel .carousel-inner .image .content .img-cont.section1 {
+  background-image: url('/assets/svgs/feature1/img1.svg');
+}
+#section1 .carousel .carousel-inner .image .content .img-cont.section2 {
+  background-image: url('/assets/svgs/feature1/img2.svg');
+}
+#section1 .carousel .carousel-inner .image .content .img-cont.section3 {
+  background-image: url('/assets/svgs/feature1/img3.svg');
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #section1 {
@@ -568,6 +591,7 @@ nav section.cta .login:hover svg .head {
   justify-content: center;
   align-items: center;
   margin: 0px;
+  border-radius: 5px;
 }
 #section3 .container div:hover {
   background: linear-gradient(222.21deg, #4043ff 1.32%, #0404a5 98.71%);
@@ -579,7 +603,7 @@ nav section.cta .login:hover svg .head {
   color: white;
 }
 #section3 .container div:hover a {
-  background-color: white;
+  background-color: #f4f6f8;
   color: #000;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
@@ -638,12 +662,12 @@ nav section.cta .login:hover svg .head {
   height: 38.8vh;
   width: 66.15vw;
   margin: auto;
-  border: 1px solid;
   margin-bottom: 15.56vh;
   padding: 4.63vh;
 }
 #cta .cont {
   display: flex;
+  box-shadow: 0px 4px 50px rgba(25, 44, 209, 0.4);
   background: linear-gradient(225deg, rgba(64, 67, 255, 0.333) 0%, #192cd1 100%), linear-gradient(229.91deg, #4043ff 21.58%, #192cd1 89.53%);
   height: 100%;
   padding-left: 3.15vw;
@@ -683,8 +707,9 @@ nav section.cta .login:hover svg .head {
   align-items: center;
   text-decoration: none;
   font-size: 14px;
-  font-family: 'GT Walsheim Pro Ultra';
+  font-family: 'GT Walsheim Pro';
   border-radius: 4.63vh;
+  transition: 0.3s ease;
   font-weight: 600;
 }
 #cta .buttons a.getstarted {
@@ -695,6 +720,10 @@ nav section.cta .login:hover svg .head {
 #cta .buttons a.learnmore {
   border: 2px solid white;
   color: white;
+}
+#cta .buttons a.learnmore:hover {
+  background-color: white;
+  color: #192CD1;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #cta {
@@ -736,6 +765,35 @@ nav section.cta .login:hover svg .head {
     font-size: 0.8vh;
   }
 }
+.features .header h4 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.3vw;
+  color: #192CD1;
+  margin-top: 2.04vh;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.features .header h1 {
+  font-size: 3.7vh;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2.78vh;
+  margin-bottom: 8.89vh;
+  line-height: 1.1;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .features .header h1 {
+    font-size: 1.83vh;
+    margin-top: 2vh;
+    margin-bottom: 4.2vh;
+  }
+}
+.features.dark {
+  background-color: #F4F6F8;
+  margin-top: 16.2vh;
+  border-radius: 10.42vw 10.42vw 0px 0px;
+}
 #reviews {
   padding-bottom: 10.19vh;
 }
@@ -763,13 +821,13 @@ nav section.cta .login:hover svg .head {
   width: 19.27vw;
   border-radius: 1.39vh;
   padding: 1.56vw;
-  background: linear-gradient(180deg, #192CD1 0%, #0404A5 100%), #576078;
+  background: #576078;
   color: white;
   transition: 0.3s ease;
 }
 #reviews .images .carousel .carousel-item .cont > div:hover {
   transform: translateY(-10px);
-  background: linear-gradient(180deg, #192CD1 0%, #0404A5 100%);
+  background: linear-gradient(180deg, #192cd1 0%, #0404a5 100%), #576078;
 }
 #reviews .images .carousel .carousel-item .cont > div > img {
   width: 2.22vh;

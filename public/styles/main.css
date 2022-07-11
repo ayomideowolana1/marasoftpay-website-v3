@@ -77,22 +77,32 @@ main .text a {
   justify-content: center;
   align-items: center;
   gap: 0.3vw;
+  transition: 0.3s ease;
+}
+main .text a span {
+  transform: translateX(0.8vw);
+  transition: inherit;
 }
 main .text a svg {
   margin-top: auto;
   margin-bottom: auto;
+  transform: translateX(-0.5vw);
+  transition: inherit;
+}
+main .text a svg .head {
+  opacity: 0;
 }
 main .text a:hover {
   color: #192CD1;
   background-color: white;
 }
+main .text a:hover span {
+  transform: translateX(0.3vw);
+}
 main .text a:hover svg {
   transform: translateX(0px);
 }
 main .text a:hover svg .head {
-  fill: #192CD1;
-}
-main .text a:hover svg .tail {
   fill: #192CD1;
   opacity: 1;
 }

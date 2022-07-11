@@ -23,7 +23,7 @@ nav section.logo img {
 }
 nav section.links {
   justify-content: center;
-  gap: 2.34vw;
+  gap: 1.2vw;
   flex: 2;
 }
 @media screen and (min-width: 320px) and (max-width: 1080px) and (orientation: portrait)  {
@@ -43,12 +43,18 @@ nav section.links a {
   align-items: center;
   justify-content: center;
   border-radius: 4.6vh;
-  padding-left: 1.88vw;
-  padding-right: 1.88vw;
+  padding-left: 1.26vw;
+  padding-right: 1.26vw;
   transition: 0.3s ease-in-out;
+}
+nav section.links a span {
+  display: inline-block;
+  transform: translateX(0.8vw);
+  transition: 0.3s ease;
 }
 nav section.links a svg {
   display: inline;
+  transform: translateX(-0.5vw);
   transition: 0.2s ease-in-out;
 }
 nav section.links a svg .head {
@@ -57,7 +63,11 @@ nav section.links a svg .head {
 nav section.links a:hover {
   border: 2px solid white;
 }
+nav section.links a:hover span {
+  transform: translateX(0.3vw);
+}
 nav section.links a:hover svg {
+  transform: translateX(0vw);
   display: inline;
 }
 nav section.links a:hover svg .head {
@@ -83,22 +93,33 @@ nav section.cta a {
   justify-content: center;
   align-items: center;
   border-radius: 4.6vh;
-  padding-left: 1.88vw;
-  padding-right: 1.88vw;
+  padding-left: 1.26vw;
+  padding-right: 1.26vw;
   gap: 0.5vw;
   transition: 0.3s ease-in-out;
 }
 nav section.cta a span {
   display: inline-block;
+  transform: translateX(0.8vw);
+  transition: 0.3s ease;
 }
 nav section.cta a svg {
   transition: 0.2s ease-in-out;
+  transform: translateX(-0.5vw);
+}
+nav section.cta a svg .head {
   opacity: 0;
 }
 nav section.cta a:hover {
   border: 2px solid white;
 }
+nav section.cta a:hover span {
+  transform: translateX(0.3vw);
+}
 nav section.cta a:hover svg {
+  transform: translateX(0vw);
+}
+nav section.cta a:hover svg .head {
   opacity: 1;
 }
 nav section.cta a.login {

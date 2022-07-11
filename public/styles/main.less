@@ -75,26 +75,33 @@ main {
       justify-content: center;
       align-items: center;
       gap: 0.3vw;
+      transition: 0.3s ease;
       span {
-        // border: 1px solid white;
+        transform: translateX(.8vw);
+        transition: inherit;
       }
       svg {
-        // border: 1px solid white;
         margin-top: auto;
         margin-bottom: auto;
+        transform: translateX(-.5vw);
+        transition: inherit;
+        .head{
+          opacity: 0;
+        }
       }
       &:hover {
         color: @persian_blue;
         background-color: white;
+        span{
+          transform: translateX(.3vw);
+        }
         svg {
           transform: translateX(0px);
           .head {
             fill: @persian_blue;
-          }
-          .tail {
-            fill: @persian_blue;
             opacity: 1;
           }
+          
         }
       }
     }

@@ -1,38 +1,4 @@
 @import '/assets/fonts/GTWalsheimPro/stylesheet.css';
-h1 {
-  font-family: 'GT Walsheim Pro';
-  font-size: 7vh;
-  font-weight: 100;
-}
-.features .header h4 {
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.3vw;
-  color: #192CD1;
-  margin-top: 2.04vh;
-  margin-bottom: 0px;
-  text-align: center;
-}
-.features .header h1 {
-  font-size: 3.7vh;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 2.78vh;
-  margin-bottom: 8.89vh;
-  line-height: 1.1;
-}
-@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
-  .features .header h1 {
-    font-size: 1.83vh;
-    margin-top: 2vh;
-    margin-bottom: 4.2vh;
-  }
-}
-.features.dark {
-  background-color: #F4F6F8;
-  margin-top: 16.2vh;
-  border-radius: 10.42vw 10.42vw 0px 0px;
-}
 #section1 {
   padding-left: 14.43vw;
   padding-right: 14.43vw;
@@ -74,7 +40,7 @@ h1 {
 #section1 .carousel .carousel-inner .image {
   transition: 0.03s ease-in-out;
   transform: scale(0.8, 0.8);
-  height: 57.86vh;
+  height: 57.31vh;
   width: 60.52vw;
   margin: auto;
 }
@@ -95,12 +61,33 @@ h1 {
   line-height: 1.5;
   text-align: center;
 }
-#section1 .carousel .carousel-inner .image .content img {
-  border-radius: 6.21vh;
-  height: 57.86vh;
-  width: 30.47vw;
+#section1 .carousel .carousel-inner .image .content .text p a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 1vh;
+}
+#section1 .carousel .carousel-inner .image .content .text p a:hover {
+  cursor: pointer;
+}
+#section1 .carousel .carousel-inner .image .content .img-cont {
+  border-radius: 6.51vh;
+  height: 57.31vh;
+  width: 54.17vh;
   margin-right: auto;
-  background-color: #192CD1;
+  background: linear-gradient(225deg, #4043ff 0%, #192cd1 100%);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+#section1 .carousel .carousel-inner .image .content .img-cont.section1 {
+  background-image: url('/assets/svgs/feature1/img1.svg');
+}
+#section1 .carousel .carousel-inner .image .content .img-cont.section2 {
+  background-image: url('/assets/svgs/feature1/img2.svg');
+}
+#section1 .carousel .carousel-inner .image .content .img-cont.section3 {
+  background-image: url('/assets/svgs/feature1/img3.svg');
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #section1 {
@@ -223,6 +210,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 0px;
+  border-radius: 5px;
 }
 #section3 .container div:hover {
   background: linear-gradient(222.21deg, #4043ff 1.32%, #0404a5 98.71%);
@@ -234,7 +222,7 @@ h1 {
   color: white;
 }
 #section3 .container div:hover a {
-  background-color: white;
+  background-color: #f4f6f8;
   color: #000;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
@@ -293,12 +281,12 @@ h1 {
   height: 38.8vh;
   width: 66.15vw;
   margin: auto;
-  border: 1px solid;
   margin-bottom: 15.56vh;
   padding: 4.63vh;
 }
 #cta .cont {
   display: flex;
+  box-shadow: 0px 4px 50px rgba(25, 44, 209, 0.4);
   background: linear-gradient(225deg, rgba(64, 67, 255, 0.333) 0%, #192cd1 100%), linear-gradient(229.91deg, #4043ff 21.58%, #192cd1 89.53%);
   height: 100%;
   padding-left: 3.15vw;
@@ -338,8 +326,9 @@ h1 {
   align-items: center;
   text-decoration: none;
   font-size: 14px;
-  font-family: 'GT Walsheim Pro Ultra';
+  font-family: 'GT Walsheim Pro';
   border-radius: 4.63vh;
+  transition: 0.3s ease;
   font-weight: 600;
 }
 #cta .buttons a.getstarted {
@@ -350,6 +339,10 @@ h1 {
 #cta .buttons a.learnmore {
   border: 2px solid white;
   color: white;
+}
+#cta .buttons a.learnmore:hover {
+  background-color: white;
+  color: #192CD1;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #cta {
@@ -390,4 +383,38 @@ h1 {
     font-family: sans-serif;
     font-size: 0.8vh;
   }
+}
+h1 {
+  font-family: 'GT Walsheim Pro';
+  font-size: 7vh;
+  font-weight: 100;
+}
+.features .header h4 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.3vw;
+  color: #192CD1;
+  margin-top: 2.04vh;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.features .header h1 {
+  font-size: 3.7vh;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2.78vh;
+  margin-bottom: 8.89vh;
+  line-height: 1.1;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .features .header h1 {
+    font-size: 1.83vh;
+    margin-top: 2vh;
+    margin-bottom: 4.2vh;
+  }
+}
+.features.dark {
+  background-color: #F4F6F8;
+  margin-top: 16.2vh;
+  border-radius: 10.42vw 10.42vw 0px 0px;
 }

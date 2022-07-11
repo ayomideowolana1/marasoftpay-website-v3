@@ -1,0 +1,119 @@
+@import '/assets/fonts/GTWalsheimPro/stylesheet.css';
+h1 {
+  font-family: 'GT Walsheim Pro';
+  font-size: 7vh;
+  font-weight: 100;
+}
+#section1 {
+  padding-left: 14.43vw;
+  padding-right: 14.43vw;
+}
+#section1 .header h1 {
+  margin-bottom: 0px;
+}
+#section1 .carousel {
+  height: 60.52vh;
+  width: 69.95vw;
+}
+#section1 .carousel .carousel-control-next {
+  width: auto;
+}
+#section1 .carousel .carousel-control-next svg {
+  height: 5.22vh;
+  width: 5.22vh;
+}
+#section1 .carousel .carousel-control-next svg #tail {
+  display: none;
+}
+#section1 .carousel .carousel-control-prev {
+  width: auto;
+}
+#section1 .carousel .carousel-control-prev svg {
+  height: 5.22vh;
+  width: 5.22vh;
+  transform: rotate(180deg);
+}
+#section1 .carousel .carousel-control-prev svg #tail {
+  display: none;
+}
+#section1 .carousel .carousel-inner {
+  height: 62.2vh;
+}
+#section1 .carousel .carousel-inner .carousel-item.active .image {
+  overflow: visible;
+}
+#section1 .carousel .carousel-inner .image {
+  transition: 0.03s ease-in-out;
+  transform: scale(0.8, 0.8);
+  height: 57.31vh;
+  width: 60.52vw;
+  margin: auto;
+}
+#section1 .carousel .carousel-inner .image .content {
+  border-radius: 6.21vh;
+  margin: auto;
+  background-color: #f6f0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#section1 .carousel .carousel-inner .image .content .text {
+  margin: auto;
+}
+#section1 .carousel .carousel-inner .image .content .text p {
+  width: 25.16vw;
+  line-height: 1.5;
+  text-align: center;
+}
+#section1 .carousel .carousel-inner .image .content .text p a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 1vh;
+}
+#section1 .carousel .carousel-inner .image .content .text p a:hover {
+  cursor: pointer;
+}
+#section1 .carousel .carousel-inner .image .content .img-cont {
+  border-radius: 6.51vh;
+  height: 57.31vh;
+  width: 54.17vh;
+  margin-right: auto;
+  background: linear-gradient(225deg, #4043ff 0%, #192cd1 100%);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+#section1 .carousel .carousel-inner .image .content .img-cont.section1 {
+  background-image: url('/assets/svgs/feature1/img1.svg');
+}
+#section1 .carousel .carousel-inner .image .content .img-cont.section2 {
+  background-image: url('/assets/svgs/feature1/img2.svg');
+}
+#section1 .carousel .carousel-inner .image .content .img-cont.section3 {
+  background-image: url('/assets/svgs/feature1/img3.svg');
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #section1 {
+    padding-left: 9.86vw;
+    padding-right: 9.86vw;
+  }
+  #section1 .carousel {
+    width: 100%;
+    height: 40vh;
+  }
+  #section1 .carousel .carousel-inner {
+    height: 40vh;
+  }
+  #section1 .carousel .carousel-inner .image {
+    width: 71.88vw;
+    height: 29.7vh;
+  }
+  #section1 .carousel .carousel-inner .image .content {
+    margin-top: 4vh;
+  }
+  #section1 .carousel .carousel-inner .image .content img {
+    height: 29.7vh;
+  }
+}

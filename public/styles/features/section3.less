@@ -1,0 +1,120 @@
+@import "../mq";
+@import "../colors";
+@import "../fonts";
+
+#section3 {
+  .header {
+    h4 {
+      margin-top: 8.84vh;
+    }
+    h1 {
+      margin-bottom: 6.48vh;
+    }
+  }
+  .container {
+    // background-color: #f2f2f2;
+    height: 74.62vh;
+    width: 60.99vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+    div {
+      width: 19.27vw;
+      height: 35.74vh;
+      margin: auto;
+      margin-bottom: 0px;
+      border-radius: 5px;
+      background: #f4f6f8;
+      transition: 0.5s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3.3vh;
+      img {
+        width: 6.48vh;
+        height: 6.48vh;
+      }
+      h3 {
+        font-size: 2.31vh;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px;
+      }
+      p {
+        margin: auto;
+        font-size: 1.67vh;
+        max-width: 14.79vw;
+        color: #576078;
+        text-align: center;
+        margin: 0px;
+      }
+      a {
+        margin: 0px;
+        background-color: #192cd1;
+        color: white;
+        font-size: 1.39vh;
+        font-weight: 600;
+        display: inline-block;
+        text-decoration: none;
+        width: 6.2vw;
+        height: 3.7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        border-radius: 5px;
+      }
+      &:hover {
+        background: linear-gradient(222.21deg, #4043ff 1.32%, #0404a5 98.71%);
+        filter: drop-shadow(0px 20px 50px rgba(64, 67, 255, 0.455));
+        h3,
+        p {
+          color: white;
+        }
+        transform: translateY(-10px);
+        a {
+          background-color: #f4f6f8;
+          color: #000;
+        }
+      }
+    }
+  }
+  @media @tab_portrait {
+    .header {
+      h4 {
+        margin-top: 6.85vh;
+      }
+    }
+    .container {
+      max-width: 82vw;
+      width: 100%;
+      height: 41vh;
+      gap: 0px;
+      & > div {
+        width: 24.59vw;
+        height: 21.11vh;
+        gap: 1.17vh;
+        margin-bottom: 1vh;
+        img {
+          width: 3.44vh;
+          height: 3.44vh;
+        }
+        h3 {
+          font-size: 1.32vh;
+        }
+        p {
+          font-size: 1.1vh;
+          max-width: 18vw;
+        }
+        a {
+          width: 8.81vw;
+          height: 3.2vh;
+          font-size: 1vh;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

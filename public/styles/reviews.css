@@ -25,13 +25,13 @@
   width: 19.27vw;
   border-radius: 1.39vh;
   padding: 1.56vw;
-  background: linear-gradient(180deg, #192CD1 0%, #0404A5 100%), #576078;
+  background: #576078;
   color: white;
   transition: 0.3s ease;
 }
 #reviews .images .carousel .carousel-item .cont > div:hover {
   transform: translateY(-10px);
-  background: linear-gradient(180deg, #192CD1 0%, #0404A5 100%);
+  background: linear-gradient(180deg, #192cd1 0%, #0404a5 100%), #576078;
 }
 #reviews .images .carousel .carousel-item .cont > div > img {
   width: 2.22vh;
