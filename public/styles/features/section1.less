@@ -1,6 +1,4 @@
-@import "../mq";
-@import "../colors";
-@import "../fonts";
+@import "../globals/index.less";
 
 #section1 {
   padding-left: 14.43vw;
@@ -57,6 +55,7 @@
         height: 57.31vh;
         width: 60.52vw;
         margin: auto;
+        
         .content {
           border-radius: 6.21vh;
           // border: 1px solid red;
@@ -74,6 +73,11 @@
               width: 25.16vw;
               line-height: 1.5;
               text-align: center;
+              font-size: 1rem;
+              @media @tab_portrait {
+                font-size: 1.29vh;
+                
+              }
               a {
                 display: block;
                 text-align: center;
@@ -95,6 +99,7 @@
             background-size: contain;
             background-position: left;
             background-repeat: no-repeat;
+            
             &.section1 {
               background-image: url('/assets/svgs/feature1/img1.svg');
             }
@@ -122,8 +127,10 @@
           height: 29.7vh;
           .content {
             margin-top: 4vh;
-            img {
+            
+            .img-cont {
               height: 29.7vh;
+              width: 28vh;
             }
           }
         }

@@ -1,6 +1,4 @@
-@import "colors";
-@import "mq";
-@import "fonts";
+@import "../globals/index.less";
 
 
 footer{
@@ -8,6 +6,9 @@ footer{
     min-height: 71.84vh;
     background-color: @independence;
     .main-font();
+    @media @tab_portrait {
+      min-height: 60vh;
+    }
 }
 
 footer {
@@ -22,7 +23,10 @@ footer {
             margin-top: 9.35vh;
             margin-bottom: 8.52vh;
             max-width: 14.48vw;
-
+            @media @tab_portrait {
+              margin-top: 6vh;
+              margin-bottom: 4vh;
+            }
         }
     }
     .container {
@@ -122,11 +126,13 @@ footer {
     }
 
     &.footer-lg {
-    //   width: 73vw;
       margin-left: auto;
       margin-right: auto;
       .footer-gap {
         height: 4.7vh;
+        @media @tab_portrait {
+          height: 2vh;
+        }
       }
       .line {
         // border: 1px solid @rythm;
@@ -145,6 +151,9 @@ footer {
         // border: 1px solid white;
         padding-bottom: 6.67vh;
         width: 65.1vw;
+        @media @tab_portrait {
+          width: 90vw;
+        }
         img {
           display: none;
         }
@@ -182,6 +191,9 @@ footer {
         margin-top: 10vh;
         padding-bottom: 6.67vh;
         margin: auto;
+        @media @tab_portrait {
+          width: 90vw;
+        }
         a {
           font-size: 1.8vh;
           font-weight: 300;
@@ -241,7 +253,6 @@ footer {
       }
       @media @tab_portrait {
         // border: 1px solid;
-        width: 90vw;
         h4 {
           font-size: 1.5vh;
         }

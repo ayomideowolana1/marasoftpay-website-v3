@@ -60,6 +60,7 @@
   width: 25.16vw;
   line-height: 1.5;
   text-align: center;
+  font-size: 1.02vh;
 }
 #section1 .carousel .carousel-inner .image .content .text p a {
   display: block;
@@ -108,8 +109,9 @@
   #section1 .carousel .carousel-inner .image .content {
     margin-top: 4vh;
   }
-  #section1 .carousel .carousel-inner .image .content img {
+  #section1 .carousel .carousel-inner .image .content .img-cont {
     height: 29.7vh;
+    width: 28vh;
   }
 }
 #section2 .header h4 {
@@ -334,7 +336,7 @@
 #cta .buttons a.getstarted {
   border: 2px solid transparent;
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 #cta .buttons a.learnmore {
   border: 2px solid white;
@@ -342,7 +344,7 @@
 }
 #cta .buttons a.learnmore:hover {
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #cta {
@@ -393,7 +395,7 @@ h1 {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.3vw;
-  color: #192CD1;
+  color: #192cd1;
   margin-top: 2.04vh;
   margin-bottom: 0px;
   text-align: center;
@@ -414,7 +416,7 @@ h1 {
   }
 }
 .features.dark {
-  background-color: #F4F6F8;
+  background-color: #f4f6f8;
   margin-top: 16.2vh;
   border-radius: 10.42vw 10.42vw 0px 0px;
 }

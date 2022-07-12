@@ -1,0 +1,118 @@
+@import '/assets/fonts/GTWalsheimPro/stylesheet.css';
+h1 {
+  font-family: 'GT Walsheim Pro';
+  font-size: 7vh;
+  font-weight: 100;
+}
+#reviews {
+  padding-bottom: 10.19vh;
+}
+#reviews .header h1 {
+  margin-bottom: 10.19vh;
+}
+#reviews .images .carousel {
+  height: 51.3vh;
+}
+#reviews .images .carousel .carousel-inner {
+  display: flex;
+}
+#reviews .images .carousel .carousel-item {
+  width: 66.15vw;
+  margin: auto;
+}
+#reviews .images .carousel .carousel-item .cont {
+  height: 41.3vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#reviews .images .carousel .carousel-item .cont > div {
+  height: 34.3vh;
+  width: 19.27vw;
+  border-radius: 1.39vh;
+  padding: 1.56vw;
+  background: #576078;
+  color: white;
+  transition: 0.3s ease;
+}
+#reviews .images .carousel .carousel-item .cont > div:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(180deg, #192cd1 0%, #0404a5 100%), #576078;
+}
+#reviews .images .carousel .carousel-item .cont > div > img {
+  width: 2.22vh;
+  height: 2.22vh;
+  margin-bottom: 2.3vh;
+}
+#reviews .images .carousel .carousel-item .cont > div > p {
+  font-size: 1.7vh;
+  line-height: 1.5;
+  width: 15.99vw;
+  margin: auto;
+  font-style: italic;
+  margin-bottom: 2.3vh;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #reviews .images .carousel .carousel-item .cont > div > p {
+    font-size: 1.02vh;
+  }
+}
+#reviews .images .carousel .carousel-item .cont > div .user {
+  display: flex;
+  align-items: center;
+  gap: 1.56vw;
+}
+#reviews .images .carousel .carousel-item .cont > div .user img {
+  border: 1px solid transparent;
+  width: 11.11vh;
+  height: 11.11vh;
+  background-color: white;
+  border-radius: 50%;
+}
+#reviews .images .carousel .carousel-item .cont > div .user p {
+  font-size: 1.7vh;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #reviews .images .carousel .carousel-item .cont > div .user p {
+    font-size: 1.02vh;
+  }
+}
+#reviews .images .carousel .carousel-item .cont > div .user p span {
+  display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #reviews .header h1 {
+    margin-bottom: 2.2vh;
+  }
+  #reviews .images .carousel {
+    height: 33vh;
+  }
+  #reviews .images .carousel .carousel-item {
+    width: 84.14vw;
+  }
+  #reviews .images .carousel .carousel-item .cont {
+    height: 30vh;
+  }
+  #reviews .images .carousel .carousel-item .cont > div {
+    width: 26.66vw;
+    height: 21vh;
+  }
+  #reviews .images .carousel .carousel-item .cont > div > img {
+    width: 1.26vh;
+    height: 1.26vh;
+    margin-bottom: 1.5vh;
+  }
+  #reviews .images .carousel .carousel-item .cont > div > p {
+    width: 23vw;
+    line-height: 1.5;
+    margin-bottom: 1.5vh;
+  }
+  #reviews .images .carousel .carousel-item .cont > div .user {
+    padding: 2px;
+  }
+  #reviews .images .carousel .carousel-item .cont > div .user img {
+    width: 6.49vh;
+    height: 6.49vh;
+  }
+}

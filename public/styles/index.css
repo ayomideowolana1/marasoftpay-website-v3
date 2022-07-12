@@ -99,7 +99,7 @@ main .text a svg .head {
   opacity: 0;
 }
 main .text a:hover {
-  color: #192CD1;
+  color: #192cd1;
   background-color: white;
 }
 main .text a:hover span {
@@ -109,7 +109,7 @@ main .text a:hover svg {
   transform: translateX(0px);
 }
 main .text a:hover svg .head {
-  fill: #192CD1;
+  fill: #192cd1;
   opacity: 1;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
@@ -117,21 +117,22 @@ main .text a:hover svg .head {
     margin-top: 7vh;
   }
   main .text h1 .lg {
-    font-size: 35px;
+    font-size: 2.56vh;
   }
   main .text h1 .sm {
-    font-size: 30px;
+    font-size: 2.2vh;
   }
   main .text p {
-    font-size: 15px;
+    font-size: 1.1vh;
     max-width: 30vw;
-    margin-top: 15px;
+    margin-top: 1.1vh;
   }
   main .text a {
     width: 13vw;
     height: 3vh;
-    font-size: 14px;
+    font-size: 1.02vh;
     margin-top: 25px;
+    border: 0.15vh solid white;
   }
 }
 main .text.animate {
@@ -350,21 +351,21 @@ nav section.cta a.login {
 nav section.cta a.signup {
   border: 2px solid transparent;
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 nav section.cta a.signup svg .head {
-  fill: #192CD1;
+  fill: #192cd1;
 }
 nav section.cta a.signup svg .tail {
-  fill: #192CD1;
+  fill: #192cd1;
 }
 nav section.cta .login:hover {
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 nav section.cta .login:hover svg .tail,
 nav section.cta .login:hover svg .head {
-  fill: #192CD1;
+  fill: #192cd1;
 }
 @media screen and (min-width: 1081px)  {
   nav {
@@ -441,6 +442,12 @@ nav section.cta .login:hover svg .head {
   width: 25.16vw;
   line-height: 1.5;
   text-align: center;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #section1 .carousel .carousel-inner .image .content .text p {
+    font-size: 1.29vh;
+  }
 }
 #section1 .carousel .carousel-inner .image .content .text p a {
   display: block;
@@ -489,8 +496,9 @@ nav section.cta .login:hover svg .head {
   #section1 .carousel .carousel-inner .image .content {
     margin-top: 4vh;
   }
-  #section1 .carousel .carousel-inner .image .content img {
+  #section1 .carousel .carousel-inner .image .content .img-cont {
     height: 29.7vh;
+    width: 28vh;
   }
 }
 #section2 .header h4 {
@@ -715,7 +723,7 @@ nav section.cta .login:hover svg .head {
 #cta .buttons a.getstarted {
   border: 2px solid transparent;
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 #cta .buttons a.learnmore {
   border: 2px solid white;
@@ -723,7 +731,7 @@ nav section.cta .login:hover svg .head {
 }
 #cta .buttons a.learnmore:hover {
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #cta {
@@ -769,7 +777,7 @@ nav section.cta .login:hover svg .head {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.3vw;
-  color: #192CD1;
+  color: #192cd1;
   margin-top: 2.04vh;
   margin-bottom: 0px;
   text-align: center;
@@ -790,7 +798,7 @@ nav section.cta .login:hover svg .head {
   }
 }
 .features.dark {
-  background-color: #F4F6F8;
+  background-color: #f4f6f8;
   margin-top: 16.2vh;
   border-radius: 10.42vw 10.42vw 0px 0px;
 }
@@ -832,14 +840,20 @@ nav section.cta .login:hover svg .head {
 #reviews .images .carousel .carousel-item .cont > div > img {
   width: 2.22vh;
   height: 2.22vh;
-  margin-bottom: 2vh;
+  margin-bottom: 2.3vh;
 }
 #reviews .images .carousel .carousel-item .cont > div > p {
-  font-size: 14px;
+  font-size: 1.7vh;
+  line-height: 1.5;
   width: 15.99vw;
   margin: auto;
   font-style: italic;
-  margin-bottom: 2vh;
+  margin-bottom: 2.3vh;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #reviews .images .carousel .carousel-item .cont > div > p {
+    font-size: 1.02vh;
+  }
 }
 #reviews .images .carousel .carousel-item .cont > div .user {
   display: flex;
@@ -854,15 +868,61 @@ nav section.cta .login:hover svg .head {
   border-radius: 50%;
 }
 #reviews .images .carousel .carousel-item .cont > div .user p {
-  font-size: 14px;
+  font-size: 1.7vh;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #reviews .images .carousel .carousel-item .cont > div .user p {
+    font-size: 1.02vh;
+  }
 }
 #reviews .images .carousel .carousel-item .cont > div .user p span {
   display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #reviews .header h1 {
+    margin-bottom: 2.2vh;
+  }
+  #reviews .images .carousel {
+    height: 33vh;
+  }
+  #reviews .images .carousel .carousel-item {
+    width: 84.14vw;
+  }
+  #reviews .images .carousel .carousel-item .cont {
+    height: 30vh;
+  }
+  #reviews .images .carousel .carousel-item .cont > div {
+    width: 26.66vw;
+    height: 21vh;
+  }
+  #reviews .images .carousel .carousel-item .cont > div > img {
+    width: 1.26vh;
+    height: 1.26vh;
+    margin-bottom: 1.5vh;
+  }
+  #reviews .images .carousel .carousel-item .cont > div > p {
+    width: 23vw;
+    line-height: 1.5;
+    margin-bottom: 1.5vh;
+  }
+  #reviews .images .carousel .carousel-item .cont > div .user {
+    padding: 2px;
+  }
+  #reviews .images .carousel .carousel-item .cont > div .user img {
+    width: 6.49vh;
+    height: 6.49vh;
+  }
 }
 footer {
   min-height: 71.84vh;
   background-color: #576078;
   font-family: 'GT Walsheim Pro';
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  footer {
+    min-height: 60vh;
+  }
 }
 footer {
   flex-direction: column;
@@ -877,6 +937,12 @@ footer .logo img {
   margin-top: 9.35vh;
   margin-bottom: 8.52vh;
   max-width: 14.48vw;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  footer .logo img {
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+  }
 }
 footer .container .toggle-body {
   display: none;
@@ -936,7 +1002,7 @@ footer.footer-sm .container2 {
   footer.footer-sm .container2 a {
     font-size: 1.5vh;
     font-weight: 300;
-    color: #192CD1;
+    color: #192cd1;
   }
   footer.footer-sm .container2 p {
     font-size: 1.5vh;
@@ -950,7 +1016,7 @@ footer.footer-sm .container2 {
     fill: #000;
   }
   footer.footer-sm .container2 .icons svg :hover {
-    fill: #192CD1;
+    fill: #192cd1;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1080px) and (orientation: landscape)  {
@@ -975,6 +1041,11 @@ footer.footer-lg {
 footer.footer-lg .footer-gap {
   height: 4.7vh;
 }
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  footer.footer-lg .footer-gap {
+    height: 2vh;
+  }
+}
 footer.footer-lg h4 {
   font-size: 2.7vh;
   font-weight: 500;
@@ -988,6 +1059,11 @@ footer.footer-lg .container-lg {
   padding-bottom: 6.67vh;
   width: 65.1vw;
 }
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  footer.footer-lg .container-lg {
+    width: 90vw;
+  }
+}
 footer.footer-lg .container-lg img {
   display: none;
 }
@@ -998,7 +1074,7 @@ footer.footer-lg .container-lg a {
   font-weight: 300;
 }
 footer.footer-lg .container-lg a:hover {
-  color: #192CD1;
+  color: #192cd1;
 }
 footer.footer-lg .container-lg .toggle-body {
   margin-top: 0px;
@@ -1022,6 +1098,11 @@ footer.footer-lg .container2 {
   margin-top: 10vh;
   padding-bottom: 6.67vh;
   margin: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  footer.footer-lg .container2 {
+    width: 90vw;
+  }
 }
 footer.footer-lg .container2 a {
   font-size: 1.8vh;
@@ -1075,9 +1156,6 @@ footer.footer-lg .container2 .icons svg:hover {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
-  footer.footer-lg {
-    width: 90vw;
-  }
   footer.footer-lg h4 {
     font-size: 1.5vh;
   }

@@ -1,4 +1,4 @@
-@import "mq";
+@import "../globals/index.less";
 
 #reviews {
   padding-bottom: 10.19vh;
@@ -42,14 +42,18 @@
             & > img {
               width: 2.22vh;
               height: 2.22vh;
-              margin-bottom: 2vh;
+              margin-bottom: 2.3vh;
             }
             & > p {
-              font-size: 14px;
+              font-size: 1.7vh;
+              line-height: 1.5;
+              @media @tab_portrait {
+                font-size: 1.02vh;
+              }
               width: 15.99vw;
               margin: auto;
               font-style: italic;
-              margin-bottom: 2vh;
+              margin-bottom: 2.3vh;
             }
             .user {
               display: flex;
@@ -65,9 +69,52 @@
                 border-radius: 50%;
               }
               p {
-                font-size: 14px;
+                font-size: 1.7vh;
+                line-height: 1.5;
+                @media @tab_portrait {
+                  font-size: 1.02vh;
+                }
                 span {
                   display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media @tab_portrait {
+    .header {
+      h1 {
+        margin-bottom: 2.2vh;
+      }
+    }
+    .images {
+      .carousel {
+        height: 33vh;
+        .carousel-item {
+          width: 84.14vw;
+          .cont {
+            height: 30vh;
+            & > div {
+              width: 26.66vw;
+              height: 21vh;
+              & > img {
+                width: 1.26vh;
+                height: 1.26vh;
+                margin-bottom: 1.5vh;
+              }
+              & > p {
+                width: 23vw;
+                line-height: 1.5;
+                margin-bottom: 1.5vh;
+              }
+              .user {
+                padding: 2px;
+                img {
+                  width: 6.49vh;
+                  height: 6.49vh;
                 }
               }
             }

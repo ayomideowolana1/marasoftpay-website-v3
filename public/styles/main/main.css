@@ -1,3 +1,9 @@
+@import '/assets/fonts/GTWalsheimPro/stylesheet.css';
+h1 {
+  font-family: 'GT Walsheim Pro';
+  font-size: 7vh;
+  font-weight: 100;
+}
 .main-bg {
   position: absolute;
   height: 81vh;
@@ -93,7 +99,7 @@ main .text a svg .head {
   opacity: 0;
 }
 main .text a:hover {
-  color: #192CD1;
+  color: #192cd1;
   background-color: white;
 }
 main .text a:hover span {
@@ -103,7 +109,7 @@ main .text a:hover svg {
   transform: translateX(0px);
 }
 main .text a:hover svg .head {
-  fill: #192CD1;
+  fill: #192cd1;
   opacity: 1;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
@@ -111,21 +117,22 @@ main .text a:hover svg .head {
     margin-top: 7vh;
   }
   main .text h1 .lg {
-    font-size: 35px;
+    font-size: 2.56vh;
   }
   main .text h1 .sm {
-    font-size: 30px;
+    font-size: 2.2vh;
   }
   main .text p {
-    font-size: 15px;
+    font-size: 1.1vh;
     max-width: 30vw;
-    margin-top: 15px;
+    margin-top: 1.1vh;
   }
   main .text a {
     width: 13vw;
     height: 3vh;
-    font-size: 14px;
+    font-size: 1.02vh;
     margin-top: 25px;
+    border: 0.15vh solid white;
   }
 }
 main .text.animate {

@@ -1,3 +1,9 @@
+@import '/assets/fonts/GTWalsheimPro/stylesheet.css';
+h1 {
+  font-family: 'GT Walsheim Pro';
+  font-size: 7vh;
+  font-weight: 100;
+}
 nav {
   z-index: 3;
   height: 9.44vh;
@@ -128,21 +134,21 @@ nav section.cta a.login {
 nav section.cta a.signup {
   border: 2px solid transparent;
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 nav section.cta a.signup svg .head {
-  fill: #192CD1;
+  fill: #192cd1;
 }
 nav section.cta a.signup svg .tail {
-  fill: #192CD1;
+  fill: #192cd1;
 }
 nav section.cta .login:hover {
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 nav section.cta .login:hover svg .tail,
 nav section.cta .login:hover svg .head {
-  fill: #192CD1;
+  fill: #192cd1;
 }
 @media screen and (min-width: 1081px)  {
   nav {

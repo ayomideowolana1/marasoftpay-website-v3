@@ -61,7 +61,7 @@ h1 {
 #cta .buttons a.getstarted {
   border: 2px solid transparent;
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 #cta .buttons a.learnmore {
   border: 2px solid white;
@@ -69,7 +69,7 @@ h1 {
 }
 #cta .buttons a.learnmore:hover {
   background-color: white;
-  color: #192CD1;
+  color: #192cd1;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #cta {

@@ -65,6 +65,12 @@ h1 {
   width: 25.16vw;
   line-height: 1.5;
   text-align: center;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #section1 .carousel .carousel-inner .image .content .text p {
+    font-size: 1.29vh;
+  }
 }
 #section1 .carousel .carousel-inner .image .content .text p a {
   display: block;
@@ -113,7 +119,8 @@ h1 {
   #section1 .carousel .carousel-inner .image .content {
     margin-top: 4vh;
   }
-  #section1 .carousel .carousel-inner .image .content img {
+  #section1 .carousel .carousel-inner .image .content .img-cont {
     height: 29.7vh;
+    width: 28vh;
   }
 }
