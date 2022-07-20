@@ -22,3 +22,14 @@ h1 {
   max-width: 11.09vw;
   height: auto;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  #section4 .images {
+    max-width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+  #section4 .images img {
+    max-width: 48.53vw;
+  }
+}

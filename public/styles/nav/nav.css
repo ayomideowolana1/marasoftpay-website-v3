@@ -8,6 +8,11 @@ nav {
   z-index: 3;
   height: 9.44vh;
   display: flex;
+  position: relative;
+  background: linear-gradient(260.84deg, #4043ff61 5.86%, #192bd169 101.33%);
+}
+nav.bg {
+  background: linear-gradient(260.84deg, #4043ff 5.86%, #192cd1 101.33%);
 }
 nav section {
   flex: 1;
@@ -27,6 +32,11 @@ nav section.logo img {
     max-width: 20.91vw;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  nav section.logo img {
+    margin-left: 1.35vh;
+  }
+}
 nav section.links {
   justify-content: center;
   gap: 1.2vw;
@@ -40,7 +50,7 @@ nav section.links {
 nav section.links a {
   position: relative;
   color: white;
-  font-size: 14px;
+  font-size: 1.48vh;
   text-decoration: none;
   border: 2px solid transparent;
   height: 3.7vh;
@@ -75,6 +85,7 @@ nav section.links a:hover span {
 nav section.links a:hover svg {
   transform: translateX(0vw);
   display: inline;
+  fill: #fff;
 }
 nav section.links a:hover svg .head {
   opacity: 1;
@@ -92,7 +103,7 @@ nav section.cta a {
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.48vh;
   height: 3.7vh;
   text-align: center;
   display: flex;
@@ -162,5 +173,88 @@ nav section.cta .login:hover svg .head {
     margin-bottom: 1.46vh;
     padding-left: 9.86vw;
     padding-right: 9.86vw;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  nav {
+    height: 6.53vh;
+  }
+}
+nav #nav-dropdown {
+  position: absolute;
+  height: auto;
+  background-color: white;
+  z-index: 4;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 0px 0px 15px 15px;
+  transition: 0.3s ease;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  nav #nav-dropdown {
+    width: 100%;
+  }
+}
+nav #nav-dropdown.close {
+  opacity: 0;
+  margin-top: 5.53vh;
+  visibility: hidden;
+}
+nav #nav-dropdown.open {
+  margin-top: 6.53vh;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0px 5px 3px #4242428f;
+}
+nav #nav-dropdown a {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  min-height: 30px;
+  text-decoration: none;
+  color: #192cd1;
+  padding: 1.5vh;
+  padding-left: 1.35vh;
+  padding-right: 1.35vh;
+  border-bottom: 1px solid #f2f2f2;
+}
+nav #nav-dropdown a[data-position="last"] {
+  border-bottom: none;
+}
+nav #nav-dropdown a svg {
+  width: 1.48vh;
+  height: auto;
+  fill: #192cd1;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  nav #nav-dropdown {
+    margin-top: 5.63vh;
+    right: 9.86vw;
+    min-width: 40vw;
+  }
+}
+@media screen and (min-width: 1081px)  {
+  nav #nav-dropdown {
+    display: none;
+  }
+}
+nav .nav-toggle {
+  border: none;
+  background: none;
+}
+nav .nav-toggle:focus {
+  outline: none;
+}
+@media screen and (min-width: 1081px)  {
+  nav .nav-toggle {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  nav .nav-toggle {
+    margin-right: 1.35vh;
   }
 }

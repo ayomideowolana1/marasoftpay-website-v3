@@ -1,272 +1,267 @@
 @import "../globals/index.less";
 
-
-footer{
-    
-    min-height: 71.84vh;
-    background-color: @independence;
-    .main-font();
-    @media @tab_portrait {
-      min-height: 60vh;
-    }
+footer {
+  min-height: 71.84vh;
+  background-color: @independence;
+  .main-font();
+  @media @tab_portrait {
+    min-height: 60vh;
+  }
 }
 
 footer {
-    //display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100vw;
-    .logo{
-        display: flex;
-        justify-content: center;
-        img{
-            margin-top: 12.44vh;
-            margin-bottom: 11.33vh;
-            max-width: 14.48vw;
-            @media @tab_portrait {
-              margin-top: 6vh;
-              margin-bottom: 4vh;
-            }
-        }
+  //display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  .logo {
+    display: flex;
+    justify-content: center;
+    img {
+      margin-top: 12.44vh;
+      margin-bottom: 11.33vh;
+      max-width: 14.48vw;
+      @media @tab_portrait {
+        margin-top: 6vh;
+        margin-bottom: 4vh;
+      }
+      @media @mobile_portrait {
+        max-width: 43.96vw;
+        margin-top: 7.41vh;
+        margin-bottom: 7.41vh;
+      }
     }
-    .container {
-      //display: flex;
-      
-      .toggle-body {
-        display: none;
-        a {
-          text-decoration: none;
-          color: #000;
+  }
+  // .container {
+  //   //display: flex;
+
+  //   .toggle-body {
+  //     display: none;
+  //     a {
+  //       text-decoration: none;
+  //       color: #000;
+  //     }
+  //   }
+  // }
+  .container2 {
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  .line {
+    //   border-top: 1px solid @rythm;
+    width: 100%;
+  }
+
+  &.footer-lg {
+    margin-left: auto;
+    margin-right: auto;
+    .footer-gap {
+      height: 4.7vh;
+      @media @tab_portrait {
+        height: 2vh;
+      }
+    }
+
+    h4 {
+      font-size: 2.7vh;
+      font-weight: 500;
+      margin-bottom: 2vh;
+      color: #fff;
+      @media @mobile_portrait {
+        font-size: 1.97vh;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        padding-top: 0.86vh;
+        padding-bottom: 0.86vh;
+        &.active {
+          border: 1px solid rgba(33, 150, 243, 0.3);
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+          svg{
+            transform: rotate(-90deg) scale(1.5, 1.5);
+            margin: 1px;
+          }
+        }
+        svg {
+          fill: #2196f3;
+          width: 30px;
+          margin-top: -3px;
+          transform: rotate(90deg) scale(1.5, 1.5);
         }
       }
     }
-    .container2 {
+
+    .toggle-body {
+      // border: 1px solid white;
+      @media @mobile_portrait {
+        display: none;
+        margin-top: -20px;
+        transition: 0.3s ease;
+        &.active{
+          margin-top: 0px;
+          display: block;
+        }
+        &.not-active{
+          
+          display: none;
+        }
+        padding-left: 8vw;
+        padding-right: 8vw;
+      }
+    }
+
+    .container-lg {
+      display: flex;
+      flex-direction: row;
+      gap: 10vw;
+      // border: 1px solid white;
+      padding-bottom: 6.67vh;
+      width: 65.1vw;
+      @media @tab_portrait {
+        width: 90vw;
+      }
+      @media @mobile_portrait {
+        flex-direction: column;
+      }
+      @media @mobile_portrait {
+        width: 100vw;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 10px;
+      }
+      img {
+        display: none;
+      }
       a {
         text-decoration: none;
-        color: #000;
-      }
-    }
-    .line {
-    //   border-top: 1px solid @rythm;
-      width: 100%;
-    }
-    &.footer-sm {
-      padding-left: 8.5vw;
-      padding-right: 8.5vw;
-      .container {
-        flex-direction: column;
-        align-items: center;
-        & div {
-          flex: 1;
-          width: 100%;
-        }
-        h4 {
-          //display: flex;
-          //  border: 1px solid;
-          font-size: 2vh;
-          font-weight: 500;
-          justify-content: space-between;
-        }
-        .toggle-body {
-          display: none;
-          a {
-            font-size: 1.5vh;
-            font-weight: 300;
-            display: block;
-            margin-bottom: 1.6vh;
-          }
-        }
-      }
-      .line {
-        margin-left: -8.5vw;
-        margin-right: -8.5vw;
-        width: 100vw;
-      }
-      .container2 {
-        width: 83vw;
-        margin: auto;
-        padding-bottom: 9vh;
-        @media @mobile_portrait {
-          h4 {
-            font-weight: 500;
-            font-size: 2vh;
-          }
-          a {
-            font-size: 1.5vh;
-            font-weight: 300;
-            color: @persian_blue;
-          }
-          p {
-            font-size: 1.5vh;
-            font-weight: 300;
-          }
-
-          .icons {
-            //display: flex;
-            gap: 3vh;
-            svg {
-              width: 20px;
-              fill: #000;
-              :hover {
-                fill: @persian_blue;
-              }
-            }
-          }
-        }
-      }
-      @media @mobile_or_tab_landscape {
-        display: none;
-      }
-      @media @tab_portrait {
-        display: none;
-      }
-      @media @desktop_or_larger {
-        display: none;
-      }
-    }
-
-    &.footer-lg {
-      margin-left: auto;
-      margin-right: auto;
-      .footer-gap {
-        height: 4.7vh;
-        @media @tab_portrait {
-          height: 2vh;
-        }
-      }
-      .line {
-        // border: 1px solid @rythm;
-      }
-      h4 {
-        font-size: 2.7vh;
-        font-weight: 500;
-        margin-bottom: 2vh;
         color: #fff;
+        font-size: 1.8vh;
+        font-weight: 300;
+        &:hover {
+          color: @persian_blue;
+        }
       }
-
-      .container-lg {
+      .toggle-body {
+        margin-top: 0px;
+      }
+      .container-inner {
         display: flex;
         flex-direction: row;
-        gap: 10vw;
-        // border: 1px solid white;
-        padding-bottom: 6.67vh;
-        width: 65.1vw;
-        @media @tab_portrait {
-          width: 90vw;
+        flex-direction: column;
+        @media @mobile_portrait {
+          gap: 10px;
+
         }
-        img {
-          display: none;
-        }
-        a {
-          text-decoration: none;
-          color: #fff;
-          font-size: 1.8vh;
-          font-weight: 300;
-          &:hover{
-              color: @persian_blue;
-            }
-        }
-        .toggle-body {
-            margin-top: 0px;
-        }
-        .container-inner {
-            display: flex;
-            flex-direction: row;
+        gap: 4.63vh;
+        & > div {
+          display: flex;
+          @media @mobile_portrait {
             flex-direction: column;
-            gap:4.63vh;
-            &>div{
-                display: flex;
-                // border: 1px solid red;
-            gap: 10vw;
-        }
+            gap: 10px;
+          }
+          gap: 10vw;
         }
       }
+    }
 
-      .container2 {
-          width: 65.1vw;
-        display: flex;
-        flex-direction: row;
-        justify-self: center;
-        gap: 10vw;
-        margin-top: 10vh;
-        padding-bottom: 6.67vh;
-        margin: auto;
-        @media @tab_portrait {
-          width: 90vw;
+    .container2 {
+      width: 65.1vw;
+      display: flex;
+      flex-direction: row;
+      justify-self: center;
+      gap: 10vw;
+      margin-top: 10vh;
+      padding-bottom: 6.67vh;
+      margin: auto;
+      @media @tab_portrait {
+        width: 90vw;
+      }
+      @media @mobile_portrait {
+        width: 100vw;
+        flex-direction: column;
+        p,.icons{
+          padding-left: 8vw;
+        padding-right: 8vw;
         }
-        a {
-          font-size: 1.8vh;
-          font-weight: 300;
-          color: white;
+      }
+      a {
+        font-size: 1.8vh;
+        font-weight: 300;
+        color: white;
         //   &.email{
         //     color: @persian_blue;
         //   }
-        }
-        .icons {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 2vh;
-          gap: 1.5vw;
-          svg {
-            width: 22px;
-            fill: #fff;
-            transition: 0.1s ease-in-out;
-            transform: scale(.9,.9);
-            &:hover {
+      }
+      .icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2vh;
+        gap: 1.5vw;
+        svg {
+          width: 22px;
+          fill: #fff;
+          transition: 0.1s ease-in-out;
+          transform: scale(.9, .9);
+          &:hover {
             //   fill: @persian_blue;
-              box-shadow: 0px 0px 5px solid #424242;
-              transform: scale(1.1,1,1);
-            }
+            box-shadow: 0px 0px 5px solid #424242;
+            transform: scale(1.1, 1, 1);
           }
         }
       }
-      @media @desktop_or_larger {
-        // //display: flex;
-      }
-      @media @mobile_portrait {
-        display: none;
-      }
-      @media @mobile_or_tab_landscape {
-        //display: flex;
-        .container2 {
-          .icons {
-            align-items: center;
-            gap: 1vw;
-            
-            svg {
-              width: 18px;
-            }
+    }
+    @media @desktop_or_larger {
+      // //display: flex;
+    }
+    @media @mobile_portrait {
+      // display: none;
+    }
+    @media @mobile_or_tab_landscape {
+      //display: flex;
+      .container2 {
+        .icons {
+          align-items: center;
+          gap: 1vw;
+
+          svg {
+            width: 18px;
           }
         }
       }
-      @media @tab_landscape {
-        h4 {
-          font-size: 2vh;
-        }
+    }
+    @media @tab_landscape {
+      h4 {
+        font-size: 2vh;
+      }
+      a {
+        font-size: 1.3vh;
+      }
+      .container-lg {
+        gap: 5vw;
+      }
+      margin-top: 7vh;
+    }
+    @media @tab_portrait {
+      // border: 1px solid;
+      h4 {
+        font-size: 1.5vh;
+      }
+      .container-lg {
         a {
-          font-size: 1.3vh;
-        }
-        .container-lg {
-          gap: 5vw;
+          font-size: 1.2vh;
         }
         margin-top: 7vh;
       }
-      @media @tab_portrait {
-        // border: 1px solid;
-        h4 {
-          font-size: 1.5vh;
-        }
-        .container-lg {
-          a {
-            font-size: 1.2vh;
-          }
-          margin-top: 7vh;
-        }
-        .container2 {
-          a {
-            font-size: 1.2vh;
-          }
+      .container2 {
+        a {
+          font-size: 1.2vh;
         }
       }
     }
   }
+}

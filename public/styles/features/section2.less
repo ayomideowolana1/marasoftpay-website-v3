@@ -15,7 +15,32 @@
     width: 68.18vw;
     margin: auto;
     position: relative;
+    @media @mobile_portrait {
+      &.lg{
+        display: none;
+      }
+    }
+    &.sm{
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        margin-top:6vh ;
+        margin-bottom:6vh ;
+        width: 85.87vw;
+      }
+      @media @desktop_or_larger {
+        display: none;
+      }
+      @media @tab_portrait {
+          display: none;
+        
+      }
+    }
     img {
+      
       &.desktop {
         position: absolute;
         width: 40.63vw;

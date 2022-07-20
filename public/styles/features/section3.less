@@ -78,6 +78,31 @@
         }
       }
     }
+    @media @mobile_portrait {
+    flex-wrap: nowrap;
+    width: 100vw;
+    // overflow: scroll;
+    height: auto;
+    flex-direction: column;
+
+    div{
+      flex: none;
+      width: 66.4vw;
+      height: 32.02vh;
+      // margin-left: 16.8vw;
+      // margin-bottom: 16.8vw;
+      margin-bottom: 6.8vw;
+      h3{
+        font-size: 1.97vh;
+      }
+      p{
+        max-width:29.79vh;
+      }
+      a{
+        width:21.38vw ;
+      }
+    }
+  }
   }
   @media @tab_portrait {
     .header {
@@ -115,4 +140,5 @@
       }
     }
   }
+  
 }

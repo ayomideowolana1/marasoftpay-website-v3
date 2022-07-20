@@ -28,9 +28,32 @@ h1 {
   bottom: -1px;
   width: 100%;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  .main-bg .cover img.lg {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .main-bg .cover img.sm {
+    display: none;
+  }
+}
+@media screen and (min-width: 1081px)  {
+  .main-bg .cover img.sm {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   .main-bg {
     height: 42.68vh;
+  }
+  .main-bg .cover {
+    height: 101%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  .main-bg {
+    height: 91.26vh;
   }
   .main-bg .cover {
     height: 101%;
@@ -67,14 +90,15 @@ main .text h1 .sm {
 }
 main .text p {
   color: white;
-  font-size: 1rem;
+  font-size: 1.85vh;
   max-width: 25.26vw;
+  font-family: 'GT Walsheim Pro';
 }
 main .text a {
   height: 5.56vh;
   width: 8.85vw;
   display: inline-block;
-  border: 2px solid white;
+  border: 0.19px solid white;
   color: white;
   text-decoration: none;
   border-radius: 4.6vh;
@@ -84,6 +108,7 @@ main .text a {
   align-items: center;
   gap: 0.3vw;
   transition: 0.3s ease;
+  font-size: 1.75vh;
 }
 main .text a span {
   transform: translateX(0.8vw);
@@ -145,6 +170,7 @@ main .image {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: -1;
 }
 main .image img {
   max-width: 41.3vw;
@@ -154,6 +180,13 @@ main .image img {
 }
 main .image img.frame {
   z-index: -1;
+  transform: translateY(50px);
+  transition: 1s ease;
+  opacity: 0;
+}
+main .image img.frame.animate {
+  opacity: 1;
+  transform: translateY(0px);
 }
 main .image img.phones {
   z-index: 1;
@@ -176,7 +209,7 @@ main .image img.popup {
   transform: scale(0.3, 0.1) translateY(50px);
   opacity: 0;
   margin-top: 5vh;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in;
 }
 main .image img.popup.animate {
   margin-top: 0vh;
@@ -190,7 +223,7 @@ main .image img.transfer-popup {
   right: -1.5vw;
   transform: translateX(-50px);
   opacity: 0;
-  transition: 0.3s ease;
+  transition: 0.5s ease-in;
 }
 main .image img.transfer-popup.animate {
   opacity: 1;
@@ -221,10 +254,75 @@ main .image img.transfer-popup.animate {
     padding-right: 9.86vw;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  main {
+    flex-direction: column;
+    height: 84.73vh;
+  }
+  main > div {
+    flex: none;
+  }
+  main .text {
+    flex: 0;
+  }
+  main .text h1 {
+    margin: auto;
+    margin-top: 6.28vh;
+    max-width: 67.47vw;
+    text-align: center;
+  }
+  main .text h1 .lg,
+  main .text h1 .sm {
+    font-size: 3.69vh;
+  }
+  main .text p {
+    max-width: 57.6vw;
+    font-size: 1.48vh;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.85vh;
+    line-height: 1.5;
+  }
+  main .text a {
+    margin: auto;
+    margin-top: 2.59vh;
+    width: 30.4vw;
+    font-size: 1.48vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+  }
+  main .text a svg {
+    transform: translateX(1vw);
+    height: auto;
+    width: 2.33vw;
+  }
+  main .text a svg .head {
+    opacity: 1;
+    fill: white;
+  }
+  main .image img {
+    max-width: 84.47vw;
+  }
+  main .image img.popup {
+    max-width: 16.33vw;
+    left: 3.87vw;
+    top: 6.28vh;
+  }
+  main .image img.transfer-popup {
+    width: 25.28vw;
+    top: 26vh;
+    right: -1vw;
+  }
+}
 nav {
   z-index: 3;
   height: 9.44vh;
   display: flex;
+  position: relative;
+  background: linear-gradient(260.84deg, #4043ff61 5.86%, #192bd169 101.33%);
+}
+nav.bg {
+  background: linear-gradient(260.84deg, #4043ff 5.86%, #192cd1 101.33%);
 }
 nav section {
   flex: 1;
@@ -244,6 +342,11 @@ nav section.logo img {
     max-width: 20.91vw;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  nav section.logo img {
+    margin-left: 1.35vh;
+  }
+}
 nav section.links {
   justify-content: center;
   gap: 1.2vw;
@@ -257,7 +360,7 @@ nav section.links {
 nav section.links a {
   position: relative;
   color: white;
-  font-size: 14px;
+  font-size: 1.48vh;
   text-decoration: none;
   border: 2px solid transparent;
   height: 3.7vh;
@@ -292,6 +395,7 @@ nav section.links a:hover span {
 nav section.links a:hover svg {
   transform: translateX(0vw);
   display: inline;
+  fill: #fff;
 }
 nav section.links a:hover svg .head {
   opacity: 1;
@@ -309,7 +413,7 @@ nav section.cta a {
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.48vh;
   height: 3.7vh;
   text-align: center;
   display: flex;
@@ -381,6 +485,89 @@ nav section.cta .login:hover svg .head {
     padding-right: 9.86vw;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  nav {
+    height: 6.53vh;
+  }
+}
+nav #nav-dropdown {
+  position: absolute;
+  height: auto;
+  background-color: white;
+  z-index: 4;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 0px 0px 15px 15px;
+  transition: 0.3s ease;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  nav #nav-dropdown {
+    width: 100%;
+  }
+}
+nav #nav-dropdown.close {
+  opacity: 0;
+  margin-top: 5.53vh;
+  visibility: hidden;
+}
+nav #nav-dropdown.open {
+  margin-top: 6.53vh;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0px 5px 3px #4242428f;
+}
+nav #nav-dropdown a {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  min-height: 30px;
+  text-decoration: none;
+  color: #192cd1;
+  padding: 1.5vh;
+  padding-left: 1.35vh;
+  padding-right: 1.35vh;
+  border-bottom: 1px solid #f2f2f2;
+}
+nav #nav-dropdown a[data-position="last"] {
+  border-bottom: none;
+}
+nav #nav-dropdown a svg {
+  width: 1.48vh;
+  height: auto;
+  fill: #192cd1;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  nav #nav-dropdown {
+    margin-top: 5.63vh;
+    right: 9.86vw;
+    min-width: 40vw;
+  }
+}
+@media screen and (min-width: 1081px)  {
+  nav #nav-dropdown {
+    display: none;
+  }
+}
+nav .nav-toggle {
+  border: none;
+  background: none;
+}
+nav .nav-toggle:focus {
+  outline: none;
+}
+@media screen and (min-width: 1081px)  {
+  nav .nav-toggle {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  nav .nav-toggle {
+    margin-right: 1.35vh;
+  }
+}
 #section1 {
   padding-left: 14.43vw;
   padding-right: 14.43vw;
@@ -442,7 +629,7 @@ nav section.cta .login:hover svg .head {
   width: 25.16vw;
   line-height: 1.5;
   text-align: center;
-  font-size: 1rem;
+  font-size: 2.2vh;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #section1 .carousel .carousel-inner .image .content .text p {
@@ -501,6 +688,40 @@ nav section.cta .login:hover svg .head {
     width: 28vh;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  #section1 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #section1 .carousel {
+    width: 100%;
+    height: auto;
+  }
+  #section1 .carousel .carousel-control-next,
+  #section1 .carousel .carousel-control-prev {
+    display: none;
+  }
+  #section1 .carousel .carousel-inner {
+    height: 83.62vh;
+  }
+  #section1 .carousel .carousel-inner .carousel-item .image {
+    border: 1px solid red;
+    height: 83.62vh;
+    width: 100%;
+  }
+  #section1 .carousel .carousel-inner .carousel-item .image .content {
+    flex-direction: column;
+  }
+  #section1 .carousel .carousel-inner .carousel-item .image .content .img-cont {
+    background-size: contain;
+    width: 100%;
+    max-height: 40.27vh;
+    border: 1px solid;
+  }
+  #section1 .carousel .carousel-inner .carousel-item .image .content .text p {
+    width: 82vw;
+  }
+}
 #section2 .header h4 {
   margin-top: 11.24vh;
 }
@@ -512,6 +733,33 @@ nav section.cta .login:hover svg .head {
   width: 68.18vw;
   margin: auto;
   position: relative;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  #section2 .images.lg {
+    display: none;
+  }
+}
+#section2 .images.sm {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section2 .images.sm img {
+  margin-top: 6vh ;
+  margin-bottom: 6vh ;
+  width: 85.87vw;
+}
+@media screen and (min-width: 1081px)  {
+  #section2 .images.sm {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #section2 .images.sm {
+    display: none;
+  }
 }
 #section2 .images img.desktop {
   position: absolute;
@@ -614,6 +862,29 @@ nav section.cta .login:hover svg .head {
   background-color: #f4f6f8;
   color: #000;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  #section3 .container {
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+  }
+  #section3 .container div {
+    flex: none;
+    width: 66.4vw;
+    height: 32.02vh;
+    margin-bottom: 6.8vw;
+  }
+  #section3 .container div h3 {
+    font-size: 1.97vh;
+  }
+  #section3 .container div p {
+    max-width: 29.79vh;
+  }
+  #section3 .container div a {
+    width: 21.38vw;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #section3 .header h4 {
     margin-top: 6.85vh;
@@ -665,6 +936,17 @@ nav section.cta .login:hover svg .head {
 #section4 .images img {
   max-width: 11.09vw;
   height: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  #section4 .images {
+    max-width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+  #section4 .images img {
+    max-width: 48.53vw;
+  }
 }
 #cta {
   height: 38.8vh;
@@ -772,6 +1054,51 @@ nav section.cta .login:hover svg .head {
     font-family: sans-serif;
     font-size: 0.8vh;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  #cta {
+    width: 100vw;
+    height: auto;
+    padding: 0px;
+    margin-top: 9.36vh;
+  }
+  #cta .cont {
+    border-radius: 0px;
+    flex-direction: column;
+  }
+  #cta .cont .text h1,
+  #cta .cont .text p {
+    width: 100%;
+    max-width: 67.73vw;
+    text-align: center;
+    margin: auto;
+  }
+  #cta .cont .text h1 {
+    margin-top: 6.28vh;
+  }
+  #cta .cont .text p {
+    margin-top: 3.2vh;
+    margin-bottom: 4.43vh;
+  }
+  #cta .cont .buttons {
+    margin-bottom: 3.82vh;
+    gap: 5.52vw;
+  }
+  #cta .cont .buttons a {
+    width: 29.77vw;
+  }
+}
+.features {
+  opacity: 0;
+  margin-top: 150px;
+  transition: opacity 1s ease, margin-top 1.5s ease;
+}
+.features.animate {
+  margin-top: 0px;
+  opacity: 1;
+}
+.features.dark {
+  opacity: 1;
 }
 .features .header h4 {
   font-size: 14px;
@@ -944,12 +1271,12 @@ footer .logo img {
     margin-bottom: 4vh;
   }
 }
-footer .container .toggle-body {
-  display: none;
-}
-footer .container .toggle-body a {
-  text-decoration: none;
-  color: #000;
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  footer .logo img {
+    max-width: 43.96vw;
+    margin-top: 7.41vh;
+    margin-bottom: 7.41vh;
+  }
 }
 footer .container2 a {
   text-decoration: none;
@@ -957,82 +1284,6 @@ footer .container2 a {
 }
 footer .line {
   width: 100%;
-}
-footer.footer-sm {
-  padding-left: 8.5vw;
-  padding-right: 8.5vw;
-}
-footer.footer-sm .container {
-  flex-direction: column;
-  align-items: center;
-}
-footer.footer-sm .container div {
-  flex: 1;
-  width: 100%;
-}
-footer.footer-sm .container h4 {
-  font-size: 2vh;
-  font-weight: 500;
-  justify-content: space-between;
-}
-footer.footer-sm .container .toggle-body {
-  display: none;
-}
-footer.footer-sm .container .toggle-body a {
-  font-size: 1.5vh;
-  font-weight: 300;
-  display: block;
-  margin-bottom: 1.6vh;
-}
-footer.footer-sm .line {
-  margin-left: -8.5vw;
-  margin-right: -8.5vw;
-  width: 100vw;
-}
-footer.footer-sm .container2 {
-  width: 83vw;
-  margin: auto;
-  padding-bottom: 9vh;
-}
-@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
-  footer.footer-sm .container2 h4 {
-    font-weight: 500;
-    font-size: 2vh;
-  }
-  footer.footer-sm .container2 a {
-    font-size: 1.5vh;
-    font-weight: 300;
-    color: #192cd1;
-  }
-  footer.footer-sm .container2 p {
-    font-size: 1.5vh;
-    font-weight: 300;
-  }
-  footer.footer-sm .container2 .icons {
-    gap: 3vh;
-  }
-  footer.footer-sm .container2 .icons svg {
-    width: 20px;
-    fill: #000;
-  }
-  footer.footer-sm .container2 .icons svg :hover {
-    fill: #192cd1;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 1080px) and (orientation: landscape)  {
-  footer.footer-sm {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
-  footer.footer-sm {
-    display: none;
-  }
-}
-@media screen and (min-width: 1081px)  {
-  footer.footer-sm {
-    display: none;
-  }
 }
 footer.footer-lg {
   margin-left: auto;
@@ -1052,6 +1303,48 @@ footer.footer-lg h4 {
   margin-bottom: 2vh;
   color: #fff;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  footer.footer-lg h4 {
+    font-size: 1.97vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 0.86vh;
+    padding-bottom: 0.86vh;
+  }
+  footer.footer-lg h4.active {
+    border: 1px solid rgba(33, 150, 243, 0.3);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  }
+  footer.footer-lg h4.active svg {
+    transform: rotate(-90deg) scale(1.5, 1.5);
+    margin: 1px;
+  }
+  footer.footer-lg h4 svg {
+    fill: #2196f3;
+    width: 30px;
+    margin-top: -3px;
+    transform: rotate(90deg) scale(1.5, 1.5);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  footer.footer-lg .toggle-body {
+    display: none;
+    margin-top: -20px;
+    transition: 0.3s ease;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+  footer.footer-lg .toggle-body.active {
+    margin-top: 0px;
+    display: block;
+  }
+  footer.footer-lg .toggle-body.not-active {
+    display: none;
+  }
+}
 footer.footer-lg .container-lg {
   display: flex;
   flex-direction: row;
@@ -1062,6 +1355,19 @@ footer.footer-lg .container-lg {
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   footer.footer-lg .container-lg {
     width: 90vw;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  footer.footer-lg .container-lg {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  footer.footer-lg .container-lg {
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 10px;
   }
 }
 footer.footer-lg .container-lg img {
@@ -1085,9 +1391,20 @@ footer.footer-lg .container-lg .container-inner {
   flex-direction: column;
   gap: 4.63vh;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  footer.footer-lg .container-lg .container-inner {
+    gap: 10px;
+  }
+}
 footer.footer-lg .container-lg .container-inner > div {
   display: flex;
   gap: 10vw;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  footer.footer-lg .container-lg .container-inner > div {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 footer.footer-lg .container2 {
   width: 65.1vw;
@@ -1102,6 +1419,17 @@ footer.footer-lg .container2 {
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   footer.footer-lg .container2 {
     width: 90vw;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  footer.footer-lg .container2 {
+    width: 100vw;
+    flex-direction: column;
+  }
+  footer.footer-lg .container2 p,
+  footer.footer-lg .container2 .icons {
+    padding-left: 8vw;
+    padding-right: 8vw;
   }
 }
 footer.footer-lg .container2 a {
@@ -1128,9 +1456,6 @@ footer.footer-lg .container2 .icons svg:hover {
 @media screen and (min-width: 1081px)  {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
-  footer.footer-lg {
-    display: none;
-  }
 }
 @media screen and (min-width: 320px) and (max-width: 1080px) and (orientation: landscape)  {
   footer.footer-lg .container2 .icons {
@@ -1177,7 +1502,6 @@ body {
 nav {
   position: sticky;
   top: 0px;
-  background: linear-gradient(260.84deg, #4043ff 5.86%, #192cd1 101.33%);
 }
 svg.arrow {
   width: 1.14vw;

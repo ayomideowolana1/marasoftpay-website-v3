@@ -78,6 +78,29 @@ h1 {
   background-color: #f4f6f8;
   color: #000;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  #section3 .container {
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+  }
+  #section3 .container div {
+    flex: none;
+    width: 66.4vw;
+    height: 32.02vh;
+    margin-bottom: 6.8vw;
+  }
+  #section3 .container div h3 {
+    font-size: 1.97vh;
+  }
+  #section3 .container div p {
+    max-width: 29.79vh;
+  }
+  #section3 .container div a {
+    width: 21.38vw;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #section3 .header h4 {
     margin-top: 6.85vh;

@@ -9,7 +9,15 @@
 
 
 .features {
-  section {
+  opacity: 0;
+  margin-top: 150px;
+  transition: opacity 1s ease, margin-top 1.5s ease;
+  &.animate{
+    margin-top: 0px;
+    opacity: 1;
+  }
+  &.dark{
+    opacity: 1;
   }
   .header {
     h4 {
