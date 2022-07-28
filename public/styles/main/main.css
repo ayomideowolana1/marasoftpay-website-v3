@@ -257,7 +257,7 @@ main .image img.transfer-popup.animate {
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
   main {
     flex-direction: column;
-    height: 84.73vh;
+    height: 90.73vh;
   }
   main > div {
     flex: none;

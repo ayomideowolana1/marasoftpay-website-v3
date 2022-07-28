@@ -58,7 +58,6 @@
 
         .content {
           border-radius: 6.21vh;
-          // border: 1px solid red;
           margin: auto;
           background-color: #f6f0ff;
           display: flex;
@@ -88,26 +87,11 @@
               }
             }
           }
-          .img-cont {
-            border-radius: 6.51vh;
-            height: 57.31vh;
+          .image-cont {
+            border-radius: inherit;
             width: 54.17vh;
-            // transform: scale(0.9,0.9);
-            margin-right: auto;
-            background: linear-gradient(225deg, #4043ff 0%, #192cd1 100%);
-            background-size: contain;
-            background-position: left;
-            background-repeat: no-repeat;
-
-            &.section1 {
-              background-image: url('/assets/svgs/feature1/img1.svg');
-            }
-            &.section2 {
-              background-image: url('/assets/svgs/feature1/img2.svg');
-            }
-            &.section3 {
-              background-image: url('/assets/svgs/feature1/img3.svg');
-            }
+            height: auto;
+            box-shadow:0px 0px  10px 3px rgba(25, 44, 209, 0.4);
           }
         }
       }
@@ -126,9 +110,10 @@
           height: 29.7vh;
           .content {
             margin-top: 4vh;
+            border-radius: 4vh;
 
-            .img-cont {
-              height: 29.7vh;
+            .image-cont {
+              // height: 2.7vh;
               width: 28vh;
             }
           }
@@ -150,23 +135,19 @@
         display: none;
       }
       .carousel-inner {
-        // border: 1px solid red;
-        height: 83.62vh;
+        height: 90.62vh;
         .carousel-item {
           .image {
-            height: 83.62vh;
-            width: 100%;
-            .content{
+            height: 92.44vh;
+            width: 100vw;
+            .content {
               flex-direction: column;
-              .img-cont{
-                background-size: cover;
-                // width: 82.51vw;
+              .image-cont {
                 width: 100%;
-                max-height: 45.27vh;
-                // border: 1px solid;
+                height: auto;
               }
               .text {
-                p{
+                p {
                   width: 82vw;
                 }
               }
