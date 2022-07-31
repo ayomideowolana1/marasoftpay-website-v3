@@ -8,6 +8,30 @@
     }
   }
   .images {
+    @media @mobile_portrait {
+      &.lg {
+        display: none;
+      }
+      &.sm {
+        display: block;
+      }
+    }
+    @media @tab_portrait {
+      &.lg {
+        display: block;
+      }
+      &.sm {
+        display: none;
+      }
+    }
+    @media @desktop_or_larger {
+      &.sm {
+        display: none;
+      }
+      &.lg {
+        display: block;
+      }
+    }
     .carousel {
       height: 51.3vh;
       //   border: 1px solid;
@@ -83,7 +107,64 @@
         }
       }
     }
+
+    @keyframes slide {
+      0% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        opacity: 1;
+        transform: translate3d(0, -194vh, 0); /* The image width */
+      }
+    }
+    
+    &.sm {
+      .carousel {
+        height: auto;
+        display: flex;
+        max-height: 50vh;
+        overflow-x: hidden;
+        .carousel-inner {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          overflow-y: scroll;
+          padding-top: 5vh;
+          padding-bottom: 5vh;
+          min-height: 194vh;
+          overflow-x: scroll;
+          gap: 5vh;
+          
+          opacity: 0;
+          transform: translate3d(0, 0, 0);
+          animation: slide 20s ease-in infinite;
+          animation-fill-mode:backwards;
+          scroll-behavior: smooth;
+          section {
+            background: linear-gradient(225deg, #4043FF 0%, #192CD1 100%);
+            padding: 10px;
+            width: 68vw;
+            border-radius: 10px;
+            height: 70vw;
+            p {
+              font-size: .8rem;
+              color: white;
+            }
+            img {
+              &.logo{
+                width: 15vw;
+                height: 15vw;
+                background-color: #f2f2f2;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
   }
+
   @media @tab_portrait {
     .header {
       h1 {

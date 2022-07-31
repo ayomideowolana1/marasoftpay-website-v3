@@ -10,6 +10,30 @@ h1 {
 #reviews .header h1 {
   margin-bottom: 10.19vh;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)  {
+  #reviews .images.lg {
+    display: none;
+  }
+  #reviews .images.sm {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  #reviews .images.lg {
+    display: block;
+  }
+  #reviews .images.sm {
+    display: none;
+  }
+}
+@media screen and (min-width: 1081px)  {
+  #reviews .images.sm {
+    display: none;
+  }
+  #reviews .images.lg {
+    display: block;
+  }
+}
 #reviews .images .carousel {
   height: 51.3vh;
 }
@@ -80,6 +104,56 @@ h1 {
 }
 #reviews .images .carousel .carousel-item .cont > div .user p span {
   display: block;
+}
+@keyframes slide {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, -194vh, 0);
+    /* The image width */
+  }
+}
+#reviews .images.sm .carousel {
+  height: auto;
+  display: flex;
+  max-height: 50vh;
+  overflow-x: hidden;
+}
+#reviews .images.sm .carousel .carousel-inner {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  min-height: 194vh;
+  overflow-x: scroll;
+  gap: 5vh;
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  animation: slide 20s ease-in infinite;
+  animation-fill-mode: backwards;
+  scroll-behavior: smooth;
+}
+#reviews .images.sm .carousel .carousel-inner section {
+  background: linear-gradient(225deg, #4043FF 0%, #192CD1 100%);
+  padding: 10px;
+  width: 68vw;
+  border-radius: 10px;
+  height: 70vw;
+}
+#reviews .images.sm .carousel .carousel-inner section p {
+  font-size: 0.8rem;
+  color: white;
+}
+#reviews .images.sm .carousel .carousel-inner section img.logo {
+  width: 15vw;
+  height: 15vw;
+  background-color: #f2f2f2;
+  border-radius: 50%;
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   #reviews .header h1 {
