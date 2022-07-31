@@ -1228,8 +1228,17 @@ nav .nav-toggle:focus {
 #reviews .images.sm .carousel {
   height: auto;
   display: flex;
-  max-height: 50vh;
+  max-height: 55vh;
   overflow-x: hidden;
+  position: relative;
+}
+#reviews .images.sm .carousel .cover {
+  position: absolute;
+  height: 75vh;
+  width: 100%;
+  top: 0px;
+  background-color: transparent;
+  z-index: 2;
 }
 #reviews .images.sm .carousel .carousel-inner {
   flex-direction: column;
@@ -1242,7 +1251,7 @@ nav .nav-toggle:focus {
   overflow-x: scroll;
   gap: 5vh;
   opacity: 0;
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 5vh, 0);
   animation: slide 20s ease-in infinite;
   animation-fill-mode: backwards;
   scroll-behavior: smooth;
@@ -1252,11 +1261,14 @@ nav .nav-toggle:focus {
   padding: 10px;
   width: 68vw;
   border-radius: 10px;
-  height: 70vw;
+  height: 73vw;
 }
 #reviews .images.sm .carousel .carousel-inner section p {
   font-size: 0.8rem;
   color: white;
+}
+#reviews .images.sm .carousel .carousel-inner section img {
+  margin-bottom: 2vh;
 }
 #reviews .images.sm .carousel .carousel-inner section img.logo {
   width: 15vw;
