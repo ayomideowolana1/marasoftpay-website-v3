@@ -1324,7 +1324,6 @@ footer {
 footer {
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100vw;
 }
 footer .logo {
   display: flex;
