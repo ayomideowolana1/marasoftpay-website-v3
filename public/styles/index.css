@@ -913,9 +913,10 @@ nav .nav-toggle:focus {
   margin-bottom: 8.61vh;
   margin-top: 3.8vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1.66vw;
+  gap: 5.66vw;
+  padding: 20px;
 }
 #section4 .images img {
   max-width: 11.09vw;
@@ -1221,7 +1222,7 @@ nav .nav-toggle:focus {
   }
   100% {
     opacity: 1;
-    transform: translate3d(0, -194vh, 0);
+    transform: translate3d(0, -124vh, 0);
     /* The image width */
   }
 }
@@ -1232,14 +1233,6 @@ nav .nav-toggle:focus {
   overflow-x: hidden;
   position: relative;
 }
-#reviews .images.sm .carousel .cover {
-  position: absolute;
-  height: 75vh;
-  width: 100%;
-  top: 0px;
-  background-color: transparent;
-  z-index: 2;
-}
 #reviews .images.sm .carousel .carousel-inner {
   flex-direction: column;
   justify-content: flex-start;
@@ -1247,7 +1240,7 @@ nav .nav-toggle:focus {
   overflow-y: scroll;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  min-height: 194vh;
+  min-height: 124vh;
   overflow-x: scroll;
   gap: 5vh;
   opacity: 0;
