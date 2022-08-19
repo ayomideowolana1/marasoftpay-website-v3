@@ -14,9 +14,15 @@ h1 {
   margin-bottom: 8.61vh;
   margin-top: 3.8vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1.66vw;
+  gap: 5.66vw;
+  padding: 20px;
+}
+@media screen and (min-width: 1081px)  {
+  #section4 .images {
+    justify-content: center;
+  }
 }
 #section4 .images img {
   max-width: 11.09vw;

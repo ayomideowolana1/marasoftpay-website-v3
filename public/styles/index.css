@@ -918,6 +918,11 @@ nav .nav-toggle:focus {
   gap: 5.66vw;
   padding: 20px;
 }
+@media screen and (min-width: 1081px)  {
+  #section4 .images {
+    justify-content: center;
+  }
+}
 #section4 .images img {
   max-width: 11.09vw;
   height: auto;

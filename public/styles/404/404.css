@@ -13,18 +13,27 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 1vh;
   font-family: 'GT Walsheim Pro';
+  padding: 3vw;
+  box-sizing: border-box;
 }
-h1 {
+h3 {
   text-align: center;
 }
 p {
+  text-align: center;
   margin: 0px;
+  line-height: 1.5;
 }
-#back {
+a.back {
+  display: block;
   background-color: #192cd1;
   color: white;
   padding: 10px 20px;
-  margin-top: 5vh;
+  margin-top: 2vh;
   text-decoration: none;
+}
+a.back:hover {
+  cursor: pointer;
 }
